@@ -15,12 +15,12 @@
   <meta property="og:image" content="{{ page.cover-images[0].image-link | default: page.cover-images[0] | default: front-page.cover-images[0].image-link }}"/>
 
   <!-- twitter card tags additive with the og: tags -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:site" content="@{{ site.twitter_username }}" />
-  <meta name="twitter:domain" content="{{ site.url }}"/>
-  <meta name="twitter:url" content="{{ page.url | absolute_url }}"/>
-  <meta name="twitter:title" content="{{ page.title | default: site.title | escape | capitalize }}"/>
-  <meta name="twitter:image" content="{{ page.cover-images[0].image-link | default: page.cover-images[0] | default: front-page.cover-images[0].image-link }}"/>
+  <!-- <meta name="twitter:card" content="summary_large_image" /> -->
+  <!-- <meta name="twitter:site" content="@{{ site.twitter_username }}" /> -->
+  <!-- <meta name="twitter:domain" content="{{ site.url }}"/> -->
+  <!-- <meta name="twitter:url" content="{{ page.url | absolute_url }}"/> -->
+  <!-- <meta name="twitter:title" content="{{ page.title | default: site.title | escape | capitalize }}"/> -->
+  <!-- <meta name="twitter:image" content="{{ page.cover-images[0].image-link | default: page.cover-images[0] | default: front-page.cover-images[0].image-link }}"/> -->
 
   <!-- Description metadata is something else... -->
   {% if page.excerpt and page.excerpt != page.content %}
@@ -40,6 +40,7 @@
 
   <!-- Site specific CSS -->
   <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}" type='text/css'>
+  <link rel="shortcut icon " type="images/x-icon" href="/assets/img/favicon.ico">
 
   <!-- Some fonts that might or might not be used -->
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">

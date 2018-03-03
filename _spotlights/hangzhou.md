@@ -1,5 +1,6 @@
 ---
 init-year: 16
 cover-image: /assets/img/memory.jpg
+position: City
 ---
-Stuff about Hayden goes here
+Present Position

@@ -9,13 +9,8 @@ Some awesome new website updates
 
 <!-- excerpt -->
 
-Check out this awesome website
-One of Jekyll’s best aspects is that it is “blog aware”. What does this mean, exactly?
-Well, simply put, it means that blogging is baked into Jekyll’s functionality.
-If you write articles and publish them online, you can publish and maintain a blog simply by managing a folder of text-files on your computer. Compared to the hassle of configuring and maintaining databases and web-based CMS systems, this will be a welcome change!
+从WordPress转向Jekyll，尝试过无数的坑，Windows真不适合编程。
+非科班出身的人，在编程路上走不远，顶多停留在模仿的程度。
+转眼过了四年了，还没有认真的写过博客，记过几次流水账后来又删掉了。
+在此2018重新开张大吉，多发牢骚多说真话，能在几年后会看，我是个有故事的人。
 
-
-# Test
-
-Check out this awesome website
-One of Jekyll’s best aspects is that it is “blog aware”. What does this mean, exactly? Well, simply put, it means that blogging is baked into Jekyll’s functionality. If you write articles and publish them online, you can publish and maintain a blog simply by managing a folder of text-files on your computer. Compared to the hassle of configuring and maintaining databases and web-based CMS systems, this will be a welcome change!

@@ -1,7 +1,8 @@
 ---
 author: user 3
-cover-images: 
-  -/assets/img/zhuhai-yunv.jpg
+cover-images:
+  - /assets/img/zhuhai-yunv.jpg
+  - /assets/img/hk-bridge2.jpg
 ---
 
 Some awesome new website updates

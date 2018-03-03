@@ -3,7 +3,7 @@ layout: page
 title: Alumni
 permalink: /get-involved/alumni
 ---
-
+<!-- 
 # Alumni Board
 While the Alumni Board is comprised of specific positions, we encourage any and everyone to be active within the alumni group. Even if you can only spare a few minutes of your time, we could always use it! Please contact [Alex Ott](mailto:ajott@mtu.edu) to get on our Alumni Executive Board email list.
 
@@ -54,3 +54,4 @@ Committees are established to better serve the Alumni and Active Organizations. 
 - [{{ file.basename }}]({{ file.path | relative_url }})
 {% endif %}
 {% endfor %}
+ -->

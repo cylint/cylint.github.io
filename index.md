@@ -28,27 +28,29 @@ cover-images:
 cover-image-controls: false
 cover-image-indicators: true
 timeline:
-  - header: Our Humble Beginnings
-    date: April 15, 1907
+  - header: 命中注定要流浪
+    date: 1991
     image: /assets/img/zdp.jpg
-    url: https://www.triangle.org/
-    caption: 16 students studying Civil Engineering at the University of Illinois decided to form a club during their senior year of college. This close group of friends laid foundation for the values based brotherhood, known as Triangle Fraternity.
+    caption: 来自西南山区的无名小卒，读书以后才知道我的名字原来不是三毛，不过没有人叫我的学名。直到进了城里，认识的人换了一波又一波，终于知道三毛的人们都越走越远。
 
-  - header: Colonization at Michigan Technological University
-    date: 1985
+  - header: 自三流本科毕业
+    date: 2009
     image: /assets/img/cqu-logo.jpg
-    caption: An interest group was recently formed to try and see if a Chapter of Triangle can be started. The [National Council](https://www.triangle.org/national-leadership/national-council/) transformed this interest group into a Colony of Triangle Fraternity, and they begin their journey to becoming a Chapter of Triangle.
+    caption: 读小学的时候，电视台放着山城棒棒军，那时候我爸也在县里当扁担儿，他告诉我的二中是最好的高中，于是我就考上了，后来又考了重大。
 
-  - header: Chartering of the Michigan Tech Chapter
-    date: April 16, 1988
+
+  - header: 虚度十多个春秋
+    date: 2012
     image: /assets/img/hat3.jpg
-    caption: The hard work of Brothers has finally paid off. The men who have joined the Colony have established the seeds of brotherhood and shared the values of Triangle with others. The group becomes a fully incorporated Chapter of Triangle Fraternity.
+    caption: 有机会选二专，我选了电子商务，没有录取，F..K，那时候淘宝京东才刚开始兴盛，现在回头看真失误啊！后来自己学了一点网络编程，知道了红帽。
 
 
-  - header: Re-Chartering of the Michigan Tech Chapter
-    date: April 14, 2012
+
+  - header: 无可奈何到杭州
+    date: 2013
     image: /assets/img/stec_logo_200px.png
     url: https://www.involvement.mtu.edu/organization/triangle-fraternity
-    caption: The Chapter of Triangle Fraternity at Michigan Technological University is reborn with a new membership, new ideas, and ready to get back to work.
+    caption: 说真心话，我不喜欢土木工程，那时候我应该去南航或者西北，跟着自己的兴趣爱好发展。毕业了终究还是要工作，面试过精工钢构和隧道股份，选了后者，居然又到了杭州。
+
 
 ---

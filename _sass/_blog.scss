@@ -1,0 +1,109 @@
+
+/*
+ * Blog name and description
+ */
+
+.blog-header {
+  padding-bottom: 1.25rem;
+  margin-bottom: 2rem;
+  border-bottom: .05rem solid #eee;
+}
+.blog-title {
+  margin-bottom: 0;
+  font-size: 2rem;
+  font-weight: 400;
+}
+.blog-description {
+  font-size: 1.1rem;
+  color: #999;
+}
+
+@media (min-width: 40em) {
+  .blog-title {
+    font-size: 3.5rem;
+  }
+}
+
+.blog-sidebar {
+  width: 100%;
+}
+
+/*
+ * Pagination
+ */
+
+ul.blog-pagination {
+  margin-bottom: 4rem;
+
+  .page-link {
+    color: $primary;
+  }
+  li.page-item {
+    &.active {
+      .page-link {
+        color: white;
+        background-color: $primary;
+        border-color: $primary;
+      }
+    }
+    &.disabled {
+      .page-link {
+        color: $secondary;
+      }
+    }
+  }
+}
+
+/*
+ * Blog posts
+ */
+
+.blog-post {
+  margin-bottom: 4rem;
+}
+.blog-post-title {
+  margin-bottom: .25rem;
+  font-size: 2.5rem;
+}
+.blog-post-meta {
+  margin-bottom: 1.25rem;
+  color: #999;
+}
+.blog-post-content {
+  figure {
+    margin-top: 15px;
+    @media (min-width: 768px) {
+      img {
+        // height: 300px;
+        width: 400px
+      }
+      &.float-left {
+        margin-right: 2em;
+      }
+      &.float-right {
+        margin-left: 2em;
+      }
+    }
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    margin: 15px 0px;
+  }
+
+  p {
+    margin: 10px 0px;
+  }
+}
+
+/*
+ * Blog Previews
+ */
+
+.blog-post-preview {
+  img.card-img-top {
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+    max-height: 300px;
+  }
+}

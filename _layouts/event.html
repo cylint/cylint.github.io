@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  {% include head.html %}
+
+  <body id="page-top">
+    {% include navbar.html %}
+    {% include carousel-header.html interval="10000" %}
+    <main role="main" class="container-fluid event-content">
+      {{ content }}
+    </main>
+    {% include footer.html %}
+    {% include scripts.html %}
+  </body>
+</html>

@@ -1,0 +1,65 @@
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: Triangle Fraternity
+description: > # this means to ignore newlines until "timezone:"
+  Our commitment to building better men dates back more than 100 years to our beginnings at the University of Illinois, where Triangle was founded by 16 civil engineers who chose to lead in the classroom, on the campus, and within the community.
+  Their choice was to form a group to support their needs and aspirations. can be both a support system and valuable stepping stone on the path to a technical career.
+timezone: America/Detroit
+excerpt_separator: "<!-- excerpt -->"
+repository: "cylint/cylint.github.io"
+# Social Media
+# email: #
+# twitter_username: #
+# instagram_username: #
+# github_username: #
+# facebook_username: #
+# twitch_username: #
+# active_slack: #
+# alumni_slack: #
+# linkedin_id: #
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+
+paginate: 5
+paginate_path: "/blog/page:num"
+
+collections:
+  events:
+    output: true
+    permalink: /:title
+  spotlights:
+    output: false
+
+defaults:
+  - scope:
+      type: "events"
+    values:
+      layout: "event"
+  - scope:
+      type: "posts"
+    values:
+      permalink: /blog/:year/:month/:day/:title
+  - scope:
+      type: "spotlights"
+    values:
+      cover-image: http://placehold.it/750x450
+      position: "Member"
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - docker-compose.yml
+  - README.md
+  - .travis.yml
+  - .gitignore
+  - LICENSE

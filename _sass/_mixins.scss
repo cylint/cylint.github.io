@@ -1,0 +1,20 @@
+@charset "utf-8";
+// Mixins
+
+// Font Mixins
+@mixin serif-font {
+  // font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Helvetica', 'Tahoma', 'Arial', 'STXihei', "华文细黑", "Microsoft YaHei", "微软雅黑", 'sans-serif';
+}
+@mixin script-font {
+  // font-family: 'Kaushan Script', 'Helvetica Neue', Helvetica, Arial, cursive;
+  font-family: 'Helvetica', 'Tahoma', 'Arial', 'STXihei', "华文细黑", "Microsoft YaHei", "微软雅黑", 'sans-serif';
+}
+@mixin body-font {
+  // font-family: 'Roboto Slab', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Helvetica', 'Tahoma', 'Arial', 'STXihei', "华文细黑", "Microsoft YaHei", "微软雅黑", 'sans-serif';
+}
+@mixin heading-font {
+  // font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Helvetica', 'Tahoma', 'Arial', 'STXihei', "华文细黑", "Microsoft YaHei", "微软雅黑", 'sans-serif';
+}

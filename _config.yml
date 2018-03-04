@@ -45,7 +45,7 @@ defaults:
   - scope:
       type: "spotlights"
     values:
-      cover-image: http://placehold.it/750x450
+      cover-image: /assets/img/autodesk.jpg
       position: "Member"
 
 # Exclude from processing.

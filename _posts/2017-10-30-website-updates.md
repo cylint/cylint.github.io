@@ -1,6 +1,6 @@
 ---
 cover-images:
-  - http://placehold.it/750x300
+  - /assets/img/autodesk.jpg
 ---
 
 Some awesome new website updates

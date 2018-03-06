@@ -5,17 +5,17 @@ cover-images:
     caption:
       position: left
       text: >
-        # Big Fish
+        ### Fish
   - image-link: /assets/img/banner-plum.jpg
     caption:
       position: left
       text: >
-        ## Plum
+        ### Plum
   - image-link: /assets/img/banner-mount.jpg
     caption:
       position: left
       text: >
-        # Clouds
+        ### Clouds
 
 cover-image-controls: true
 cover-image-indicators: true
@@ -33,7 +33,7 @@ timeline:
   - header: 虚度春秋二十载
     date: 2010
     image: /assets/img/hat3.jpg
-    caption: 有机会选二专，我选了电子商务，没有录取，F..K，那时候淘宝京东才刚开始兴盛，现在回头看真失误啊！后来自己学了一点网络编程，知道了红帽。不是科班出身，毕竟力不从心。
+    caption: 有机会选二专，我选了仪器工程、电子商务，都没有录取，那时候还没有草泥马这个词，那时候淘宝京东才刚开始兴盛，现在回头看真失误啊！后来自己学了一点网络编程，知道了红帽软件，想成为业余程序员，毕竟不是科班出身，总是力不从心。
 
   - header: 无可奈何到杭州
     date: 2013

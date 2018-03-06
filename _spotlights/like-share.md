@@ -1,6 +1,6 @@
 ---
 init-year: 16
 cover-image: /assets/img/like.jpg
-position: Follow
+position: Anything
 ---
-Anything you want to know
+You want to know

@@ -1,27 +1,21 @@
 ---
 layout: home
 cover-images:
-  - image-link: /assets/img/header-greatwall.jpg
+  - image-link: /assets/img/banner-fish.jpg
     caption:
       position: left
       text: >
-        # Great Wall
-  - image-link: /assets/img/header-hupan.jpg
+        # Big Fish
+  - image-link: /assets/img/banner-plum.jpg
     caption:
       position: left
       text: >
-        ## Hupan Graden
-
-  - image-link: /assets/img/header-orhai.jpg
+        ## Plum
+  - image-link: /assets/img/banner-mount.jpg
     caption:
       position: left
       text: >
-        # Yun Nan
-  - image-link: /assets/img/header-qingliang.jpg
-    caption:
-      position: left
-      text: >
-        # Qingliang Mount
+        # Clouds
 
 cover-image-controls: true
 cover-image-indicators: true

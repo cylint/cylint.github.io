@@ -1,11 +1,11 @@
 ---
-author: user 3
+title: Powered by Jekyll
+author: MARC
 cover-images:
-  - /assets/img/zhuhai-yunv.jpg
-  - /assets/img/hk-bridge2.jpg
+  - /assets/img/jekyll.png
 ---
 
-Some awesome new website updates
+powered by Jekyll, deploy website using GitHub
 
 <!-- excerpt -->
 

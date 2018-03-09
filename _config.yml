@@ -1,12 +1,13 @@
 # Site settings
 title: Three Trees
-url: https://cylint.github.io
-
+# url: https://cylint.github.io
+url: http://localhost:4000
 description: > # this means to ignore newlines until "timezone:"
   three trees make forest.
 timezone: Asia/Shanghai
 excerpt_separator: "<!-- excerpt -->"
 repository: "cylint/cylint.github.io"
+
 # Social Media
 # email: #
 # twitter_username: #

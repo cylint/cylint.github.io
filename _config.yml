@@ -1,5 +1,7 @@
 # Site settings
 title: Three Trees
+url: http://threetrees.net
+
 description: > # this means to ignore newlines until "timezone:"
   three trees make forest.
 timezone: Asia/Shanghai

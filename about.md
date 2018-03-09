@@ -4,6 +4,8 @@ title: About
 permalink: /about/
 ---
 
+起名为三棵树。
+
 这个站点记录了本人的一些想法、经历和个人言论，不过有不恰当言论或者涉及隐私、版权等问题，请联系邮箱：
 zypper@aliyun.com
 
@@ -11,7 +13,7 @@ zypper@aliyun.com
 
 ---
 
-This site use the Jekyll Theme of [Triangle Fraternity at Michigan Tech](https://trianglefraternitymtu.github.io/) ,almost the same.
+This site use the Jekyll Theme of [Triangle Fraternity at Michigan Tech](https://trianglefraternitymtu.github.io/) ,almost keep the same.
 
 You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
 

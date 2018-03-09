@@ -1,8 +1,7 @@
 # Site settings
-title: San Mao
+title: Three Trees
 description: > # this means to ignore newlines until "timezone:"
-  Our commitment to building better men dates back more than 100 years to our beginnings at the University of Illinois, where Triangle was founded by 16 civil engineers who chose to lead in the classroom, on the campus, and within the community.
-  Their choice was to form a group to support their needs and aspirations. can be both a support system and valuable stepping stone on the path to a technical career.
+  three trees make forest.
 timezone: Asia/Shanghai
 excerpt_separator: "<!-- excerpt -->"
 repository: "cylint/cylint.github.io"
@@ -10,12 +9,12 @@ repository: "cylint/cylint.github.io"
 # email: #
 # twitter_username: #
 # instagram_username: #
-# github_username: #
+github_username: cppfish
 # facebook_username: #
 # twitch_username: #
 # active_slack: #
 # alumni_slack: #
-# linkedin_id: #
+linkedin_id: erichueng
 
 # Build settings
 markdown: kramdown

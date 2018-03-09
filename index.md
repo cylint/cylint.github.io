@@ -11,9 +11,9 @@ cover-images:
       position: left
       text: >
         ### Plum
-  - image-link: /assets/img/banner-mount.jpg
+  - image-link: /assets/img/banner-journey.jpg
     caption:
-      position: left
+      position: right
       text: >
         ### Clouds
 

@@ -15,15 +15,18 @@
           <a class="nav-link" href="{% link blog/index.html %}">Blog</a>
         </li>
         {% endif %}
-{% raw %}
-<!--         <li class="nav-item dropdown">
+        <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="events" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Events</a>
           <div class="dropdown-menu" aria-labelledby="events">
             {% for event in site.events %}
             <a class="dropdown-item" href="{{ event.url }}">{{event.title}}</a>
             {% endfor %}
+            <a class="dropdown-item" href="/search">search</a>
+
           </div>
-        </li> -->
+        </li>
+{% raw %}
+
 <!--         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="{% link actives.md %}" id="involved" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Get Involved</a>
           <div class="dropdown-menu" aria-labelledby="involved">
@@ -39,3 +42,8 @@
     </div>
   </div>
 </nav>
+
+
+{% unless page.layout == "home" %}
+  <br>
+{% endunless %}

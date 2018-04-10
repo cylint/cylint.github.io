@@ -1,10 +1,11 @@
 ---
-title: Mental Pressure
+title: Change the game
 author: Author Unknown
 cover-images:
-  - /assets/img/change-the-game.jpg
+  - /assets/img/hd-sanmao.jpg
 ---
 
+伤脑
 
 <!-- excerpt -->
 

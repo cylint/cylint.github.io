@@ -4,9 +4,9 @@
   url: /about/
   icon: info
 
-- title: Blog
-  url: /blog/
-  icon: pencil
+# - title: Blog
+#   url: /blog/
+#   icon: pencil
 
 - title: Stories
   url: /stories/

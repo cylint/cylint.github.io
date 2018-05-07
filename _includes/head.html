@@ -1,51 +1,70 @@
-<head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+<meta charset="utf-8">
+<title>{% if page.title %}{{ page.title }} &#8211; {% endif %}{{ site.title }}</title>
+{% if page.excerpt %}<meta name="description" content="{{ page.excerpt | strip_html }}">{% endif %}
+{% if page.tags %}<meta name="keywords" content="{{ page.tags | join: ', ' }}">{% endif %}
+{% if page.author %}{% assign author = site.data.authors[page.author] %}{% else %}{% assign author = site.owner %}{% endif %}
+<meta name="author" content="{{ author.name }}" />
+{% include open-graph.html %}
+{% if site.owner.google.verify %}<!-- Webmaster Tools verfication --><meta name="google-site-verification" content="{{ site.owner.google.verify }}">{% endif %}
+{% if site.owner.bing-verify %}<meta name="msvalidate.01" content="{{ site.owner.bing-verify }}">{% endif %}
+{% capture canonical %}{{ site.url }}{% if site.permalink contains '.html' %}{{ page.url }}{% else %}{{ page.url | remove:'index.html' | strip_slash }}{% endif %}{% endcapture %}
+<link rel="canonical" href="{{ canonical }}">
+<link href="{{ site.url }}/feed.xml" type="application/atom+xml" rel="alternate" title="{{ site.title }} All Posts Feed">
+<link href="{{ site.url }}/feed.blog.xml" type="application/atom+xml" rel="alternate" title="{{ site.title }} Blog Feed">
+<link href="{{ site.url }}/feed.music.xml" type="application/atom+xml" rel="alternate" title="{{ site.title }} Music Feed">
+<link href="{{ site.url }}/feed.stories.xml" type="application/atom+xml" rel="alternate" title="{{ site.title }} Stories Feed">
 
-  <title>{{ page.title | default: site.title | escape | capitalize }}</title>
+<!-- https://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  {% assign front-page = site.pages | where: 'name', 'index.md' | first %}
+<!-- For all browsers -->
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css">
+<!-- Webfonts -->
+<link href='https://fonts.googleapis.com/css?family=Philosopher:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700" rel="stylesheet">
 
-  <!-- facebook open graph tags -->
-  <meta property="og:type" content="{% if page.layout == 'post' %}article{% else %}website{% endif %}"/>
-  <meta property="og:title" content="{{ page.title | default: site.title | escape | capitalize }}"/>
-  <meta property="og:url" content="{{ page.url | absolute_url }}"/>
-  <meta property="og:site_name" content="{{ site.title | escape  capitalize}}"/>
-  <meta property="og:image" content="{{ page.cover-images[0].image-link | default: page.cover-images[0] | default: front-page.cover-images[0].image-link }}"/>
+<meta http-equiv="cleartype" content="on">
 
-  <!-- twitter card tags additive with the og: tags -->
-  <!-- <meta name="twitter:card" content="summary_large_image" /> -->
-  <!-- <meta name="twitter:site" content="@{{ site.twitter_username }}" /> -->
-  <!-- <meta name="twitter:domain" content="{{ site.url }}"/> -->
-  <!-- <meta name="twitter:url" content="{{ page.url | absolute_url }}"/> -->
-  <!-- <meta name="twitter:title" content="{{ page.title | default: site.title | escape | capitalize }}"/> -->
-  <!-- <meta name="twitter:image" content="{{ page.cover-images[0].image-link | default: page.cover-images[0] | default: front-page.cover-images[0].image-link }}"/> -->
+<!-- HTML5 Shiv and Media Query Support -->
+<!--[if lt IE 9]>
+  <script src="{{ site.url }}/assets/js/vendor/html5shiv.min.js"></script>
+  <script src="{{ site.url }}/assets/js/vendor/respond.min.js"></script>
+<![endif]-->
 
-  <!-- Description metadata is something else... -->
-  {% if page.excerpt and page.excerpt != page.content %}
-  <meta property="og:description" content="{{ page.excerpt | strip_html | normalize_whitespace | escape }}"/>
-  <meta name="twitter:description" content="{{ page.excerpt | strip_html | normalize_whitespace | escape }}"/>
-  {% else %}
-  <meta property="og:description" content="{{ site.description | strip_html | normalize_whitespace | escape }}"/>
-  <meta name="twitter:description" content="{{ site.description | strip_html | normalize_whitespace | escape }}"/>
-  {% endif %}
+<!-- Modernizr -->
+<script src="{{ site.baseurl }}/assets/js/vendor/modernizr-2.7.1.custom.min.js"></script>
+<!-- Navigation bar -->
+<script src="{{ site.baseurl }}/assets/js/vendor/classie.js"></script>
+<script src="{{ site.baseurl }}/assets/js/vendor/gnmenu.js"></script>
 
-  <!-- Atom feed information -->
-  {% feed_meta %}
+{% if site.mathjax and page.mathjax %}
+<!-- MathJax -->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script> -->
+<script src="https://cdn.bootcss.com/mathjax/2.7.4/MathJax.js"></script>
+{% endif %}
 
-  <!-- Bootstrap CSS -->
-  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous"> -->
-  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"> -->
-  <link href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-  <!-- Site specific CSS -->
-  <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}" type='text/css'>
-  <link rel="shortcut icon " href="{{ "/assets/img/favicon.ico" | relative_url }}" type="images/x-icon">
+{% if page.xmldata.template ==  "timelinejs" %}
+<!-- Knightlab  Timeline 3-->
+<link title="timeline-styles" rel="stylesheet" href="https://cdn.knightlab.com/libs/timeline3/latest/css/timeline.css">
+<script src="https://cdn.knightlab.com/libs/timeline3/latest/js/timeline.js"></script>
+{% endif %}
 
-  <!-- Some fonts that might or might not be used -->
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-  <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
-</head>
+{% if page.layout == "home" %}
+<link rel="stylesheet" href="{{ site.url }}/css/countdown.css">
+{% endif %}
+
+<!-- Icons -->
+<!-- 16x16 -->
+<link rel="shortcut icon" href="{{ site.url }}/favicon.ico">
+<!-- 32x32 -->
+<link rel="shortcut icon" href="{{ site.url }}/favicon.png">
+<!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+<link rel="apple-touch-icon-precomposed" href="{{ site.url }}/images/apple-touch-icon-precomposed.png">
+<!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{ site.url }}/images/apple-touch-icon-72x72-precomposed.png">
+<!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{ site.url }}/images/apple-touch-icon-114x114-precomposed.png">
+<!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ site.url }}/images/apple-touch-icon-144x144-precomposed.png">

@@ -1,62 +1,102 @@
-# Site settings
-title: Three Trees
-url: https://cylint.github.io
-# url: http://localhost:8000
-description: > # this means to ignore newlines until "timezone:"
-  three trees make forest.
+# Site wide configuration
+
+title: MarcEwing's Diary
+locale: zh-cn
 timezone: Asia/Shanghai
-excerpt_separator: "<!-- excerpt -->"
-repository: "cylint/cylint.github.io"
+# description: Theme based on So Simple Theme
+logo: language.svg
+search: true
+url: #your-site-url
+external_data_url: # common url for images and other external data
+imgurl: /images
 
-# Social Media
-# email: #
-# twitter_username: #
-# instagram_username: #
-github_username: cppfish
-# facebook_username: #
-# twitch_username: #
-# active_slack: #
-# alumni_slack: #
-linkedin_id: erichueng
+# Jekyll configuration
 
-# Build settings
-markdown: kramdown
+permalink:   /:categories/:year/:month/:day/:title/
+markdown:    kramdown
+highlighter: rouge
+sass:
+  sass_dir: _sass
+  style: compressed
+
 plugins:
+  - jekyll-sitemap
+  - jekyll-gist
   - jekyll-feed
+  - jekyll-redirect-from
   - jekyll-paginate
+  - jemoji
 
-paginate: 5
-paginate_path: "/blog/page:num"
+collections_dir: docs
 
+# Add you collections here. Remove the 'animals' collection in your site.
 collections:
-  events:
+  animals:
     output: true
-    permalink: /:title
-  spotlights:
-    output: true
-# output: false
+    permalink: /:collection/:path
 
+kramdown:
+  input: GFM
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..2
+  enable_coderay: false
+
+mathjax: true
+
+include: [".htaccess"]
+exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", ".less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md", "vendor"]
+
+paginate: 20
+paginate_path: /posts/page:num
+
+# See http://jch.penibelst.de/ for settings.
+compress_html:
+  clippings: []
+  comments: []
+  endings: []
+  ignore:
+    envs: []
+  blanklines: true
+  profile: false
+  startings: []
+
+# Site owner
+owner:
+  name: Site Name
+  avatar: site-logo.png
+  email: #youremail
+  disqus-shortname: #your-disqus-shortname
+  twitter: #your-twitter-name
+  facebook: #username
+  github: #your-github-name
+  stackexchange: #http://stackoverflow.com/users/123456/username
+  linkedin: #username
+  instagram:
+    user: #instagram-username
+    userId: #instagram-userId
+    clientId: #instagram-clientId
+  flickr: #username
+  tumblr: #tumblr-name
+  pinterest: #username
+  weibo: #userid
+  soundcloud: #soundcloud-name
+  mixcloud: #mixcloud-name
+  lastfm: #username
+  tawkto:
+    siteID: #tawkto-siteID
+  google:
+    plus:
+    analytics: #google-analytics-id
+    verify:
+    ad-client:
+    ad-slot:
+  bing-verify:
+
+# layout
 defaults:
-  - scope:
-      type: "events"
-    values:
-      layout: "event"
   - scope:
       type: "posts"
     values:
-      permalink: /blog/:year/:month/:day/:title
-  - scope:
-      type: "spotlights"
-    values:
-      cover-image: /assets/img/autodesk.jpg
-      position: "Member"
-
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - README.md
-  - .gitignore
-  - LICENSE
+      layout: "post"

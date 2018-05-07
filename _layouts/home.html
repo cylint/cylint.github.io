@@ -1,86 +1,36 @@
-<!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-US" }}">
-  {% include head.html %}
+---
+layout: compress
+---
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+{% include head.html %}
+</head>
+<body id="page">
+{% include navigation.html %}
+{% include masthead.html %}
 
-  <body id="page-top">
-    {% include navbar.html %}
-    {% include carousel-header.html %}
+<div id="main" role="main">
+        
+        {{ content }}
 
-    {% if site.posts.size >= 4 %}
-    <section id="news">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">New Stories</h2>
-            <h3 class="section-subheading text-muted">Recent updates</h3>
-          </div>
-        </div>
-        <div class="row">
-          {% for post in site.posts %}
-          <div class="col-lg-4">
-            <div class="card mb-4 blog-post-preview">
-              {% if post.cover-images %}
-              <img class="card-img-top img-fluid" src="{{ post.cover-images[0] }}" alt="Spotlight image for {{ post.title }}" alt="featured image from post on {{ post.date | date_to_long_string }}">
-              {% endif %}
-              <div class="card-body">
-                <h6 class="card-title">{{ post.title }}</h6>
-                <p class="card-text">
-                {% if page.excerpt == page.content %}
-                {{ post.content | remove_first: post.excerpt | truncatewords: 150 }}</p>
-                {% else %}
-                {{ post.excerpt | truncatewords: 150 }}
-                {% endif %}
-                </p>
-              {% comment %}
+  <p id="back-top" {% if page.enable_chat %}class="right-higher"{% else %}class="right"{% endif %}><a href="#page"><i class="fa fa-angle-double-up no-print"></i></a></p>
 
-                <a class="btn btn-primary float-right" href="{{ post.url }}" role="button">Read More <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
-              {% endcomment %}
+</div><!-- /#main -->
 
-              </div>
-              {% comment %}
-              <div class="card-footer text-muted">
-                <i class="fa fa-calendar" aria-hidden="true"></i> Posted on {{ post.date | date_to_long_string }}{% if post.author %} by {{ post.author }}{% endif %}
-              </div>
-              {% endcomment %}
-            </div>
-          </div>
-          {% if forloop.index >= 6 %}
-          {% break %}
-          {% endif %}
-          {% endfor %}
-        </div>
-      </div>
-    </section>
-    {% endif %}
-
-    {% include timeline.html %}
-
-    {% if site.spotlights.size >= 3 %}
-    <section id="spotlights" class="d-none d-md-block">
-      <div class="container">
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <h2 class="section-heading text-uppercase">More Details</h2>
-          <h3 class="section-subheading text-muted"> Using social media to connect me, sharing stories of my real world.</h3>
-        </div>
-      </div>
-      <div class="container">
-        <div class="card-deck">
-          {% for sl in site.spotlights %}
-            {% include spotlight-card.html spotlight=sl %}
-            {% if forloop.index >= 3 %}
-              {% break %}
-            {% endif %}
-          {% endfor %}
-        </div>
-      </div>
-    </section>
-    {% endif %}
-
-    <main role="main" class="container mt-3">
-      {{ content }}
-    </main>
+<div class="footer-wrapper">
+  <footer role="contentinfo" class="entry-wrapper">
     {% include footer.html %}
-    {% include scripts.html %}
-  </body>
+  </footer>
+</div><!-- /.footer-wrapper -->
+
+{% include scripts.html %}
+
+<script src="{{ site.url }}/assets/js/countdown.js"></script>
+
+
+</body>
 </html>

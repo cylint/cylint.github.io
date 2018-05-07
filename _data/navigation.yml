@@ -8,10 +8,6 @@
   url: /blog/
   icon: pencil
 
-- title: Music
-  url: /music/
-  icon: music
-  
 - title: Stories
   url: /stories/
   icon: book
@@ -27,3 +23,7 @@
 - title: Search
   url: /search/
   icon: search
+
+- title: Articles
+  url: /articles/
+  icon: key

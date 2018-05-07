@@ -6,7 +6,7 @@ timezone: Asia/Shanghai
 # description: Theme based on So Simple Theme
 logo: language.svg
 search: true
-url: #your-site-url
+url: https://cylint.github.io
 external_data_url: # common url for images and other external data
 imgurl: /images
 
@@ -48,7 +48,7 @@ mathjax: true
 include: [".htaccess"]
 exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", ".less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md", "vendor"]
 
-paginate: 8
+paginate: 20
 paginate_path: /articles/page:num
 
 # See http://jch.penibelst.de/ for settings.
@@ -64,7 +64,7 @@ compress_html:
 
 # Site owner
 owner:
-  name: Site Name
+  name: MarcEwing
   avatar: site-logo.png
   email: #youremail
   disqus-shortname: #your-disqus-shortname

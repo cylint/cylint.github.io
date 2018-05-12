@@ -19,6 +19,8 @@ author: Author3
   <input type="submit" value="Search" id="goog-wm-sb" class="btn--inverse" />
 </form>
 
+<script src="/search.json"></script>
+
 <!-- Search results placeholder -->
 <h6 data-search-found>
   <span data-search-found-count></span> result(s) found for &ldquo;<span data-search-found-term></span>&rdquo;.

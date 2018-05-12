@@ -26,7 +26,7 @@ permalink: /tagsjs/
 {% endfor %}
 </ul>
 
-<script src="/assets/js/vendor/jquery-1.9.1.min.js" type="text/javascript" charset="utf-8"></script> 
+<!-- <script src="/assets/js/vendor/jquery-1.9.1.min.js" type="text/javascript" charset="utf-8"></script>  -->
 <script src="/assets/js/tag/jquery.tagcloud.js" type="text/javascript" charset="utf-8"></script> 
 <script language="javascript">
   $.fn.tagcloud.defaults = {

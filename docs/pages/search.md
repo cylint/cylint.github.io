@@ -11,6 +11,8 @@ search_omit: true
 sitemap: false
 author: Author3
 ---
+
+
   
 <!-- Search form -->
 <form method="get" action="{{ site.url }}/search/" data-search-form class="simple-search">
@@ -19,7 +21,7 @@ author: Author3
   <input type="submit" value="Search" id="goog-wm-sb" class="btn--inverse" />
 </form>
 
-<script src="/search.json"></script>
+<!-- <script src="/search.json"></script> -->
 
 <!-- Search results placeholder -->
 <h6 data-search-found>

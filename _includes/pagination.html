@@ -9,7 +9,7 @@
   {% if page == paginator.page %}
     <span class="btn btn--inverse non-selectable" style="background-color: #fff; color: #000;">{{ page }}</span>
   {% elsif page == 1 %}
-    <a href="{{ site.url }}/articles/" class="btn btn--inverse non-selectable">{{ page }}</a>
+    <a href="{{ site.url }}/paging/" class="btn btn--inverse non-selectable">{{ page }}</a>
   {% else %}
     <a href="{{ site.paginate_path | replace: ':num', page }}" class="btn btn--inverse non-selectable">{{ page }}</a>
   {% endif %}

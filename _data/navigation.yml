@@ -24,6 +24,6 @@
   url: /search/
   icon: search
 
-- title: Articles
-  url: /articles/
-  icon: key
+- title: Loop
+  url: /loop/
+  icon: retweet

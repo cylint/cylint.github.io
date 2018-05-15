@@ -3,10 +3,8 @@ layout: post
 title:  "Find Shanghai and Lost in Shanghai"
 date:   2012-8-17 22:11:00
 categories: gallery
-description: 你对上海的第一印象是什么？
 ---
 
-你对上海的第一印象是什么？
 
 魔都！挑战世界极限，超高层建筑、超大直径隧道、高性能超级计算、国际金融贸易……
 

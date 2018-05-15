@@ -1,18 +1,11 @@
 ---
 layout: post
-title: "Post: Link"
+title: "Midas civil bridge design"
 categories: blog
-tags: [link]
+tags: [midas]
 author: Author1
 hidelogo: true
-link: https://github.com
 ---
-
-This theme supports **link posts**, made famous by John Gruber. To use, just add `link: http://url-you-want-linked` to the post's YAML front matter and you're done.
-
-> And this is how a quote looks.
-
-Some [link](#) can also be shown.
 
 
 《midas Civil桥梁荷载试验实例精析》王伟2017

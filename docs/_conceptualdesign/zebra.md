@@ -4,10 +4,10 @@ title: Zebra
 class: 	Mammalia
 family: Equidae
 image:
-  feature:
+  feature: 
   credit: pexels.com
   creditlink:
-  thumbnail: images.pexels.com/photos/259351/pexels-photo-259351.jpeg
+  thumbnail: /images/book-strucdesign/1.jpg
 hidelogo: true 
 ---
 

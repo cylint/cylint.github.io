@@ -1,9 +1,9 @@
 ---
 layout: collection
-title: "A collection of animals"
-collection: "animals"
-permalink: "/animals/"
-author: Author1
+title: "Structural conceptual design"
+collection: "conceptualdesign"
+permalink: "/conceptualdesign/"
+hidelogo: true
 date: 2017-08-08T15:39:55-04:00
 ---
 

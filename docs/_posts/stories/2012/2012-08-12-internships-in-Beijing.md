@@ -3,7 +3,6 @@ layout: post
 title:  "去北京实习"
 categories: gallery
 tags: gallery
-description: "A month-long tour of Beijing in the summer of 2012."
 ---
 
 很快就要毕业了，不怎么爱学习的我还是感觉到了找毕业工作的压力，之前在佛山盈亮包装公司做暑假工，并不能为我毕业找工作的简历加分，所以还是选择一家建设工程的公司实习吧。

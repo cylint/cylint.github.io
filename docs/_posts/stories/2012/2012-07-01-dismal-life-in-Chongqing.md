@@ -3,8 +3,6 @@ layout: post
 title:  "The dismal life in Chongqing"
 date:   2012-07-01 12:11:00
 categories: gallery
-published: false
-description:  
 ---
 
 <span class="post__tag--blue">蜀中忆，最忆是重庆</span>

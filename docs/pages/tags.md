@@ -7,7 +7,7 @@ search_omit: true
 permalink: /tags/
 ---
 <figure>
-    <img src="/images/icon-politica.svg" alt="tags-Image" class="center non-selectable"/>
+    <img src="/images/music-notes.png" alt="tags-Image" class="center non-selectable"/>
 </figure>
 {% capture site_tags %}{% for tag in site.tags %}{{ tag | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
 {% assign tags_list = site_tags | split:',' | sort %}

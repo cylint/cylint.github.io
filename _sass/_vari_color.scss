@@ -1,0 +1,23 @@
+// COLORS BACKUP ===============================================
+$body-color               : #fff;
+$text-color               : #000;
+$base-color               : #343434;
+$comp-color               : adjust-hue($base-color, 180);
+$border-color             : #ddd;
+$white                    : #fff;
+$black                    : #999999;
+$accent-color             : $black;
+$link-color               : #222;
+
+$navigation-arrows-color  : #696969;
+$navigation-bar-color     : #fbfbfb;
+
+$table-border-color       : $border-color;
+$table-border             : 1px solid $table-border-color;
+$table-background         : $body-color;
+$table-header-color       : lighten($table-background, 10);
+$table-hover-color        : darken($table-background, 2);
+$table-stripe-color       : darken($table-background, 8);
+$table-stripe-color-hover : darken($table-stripe-color, 10);
+
+$quote_background_color   : #fff;

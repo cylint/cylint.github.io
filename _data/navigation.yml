@@ -1,6 +1,6 @@
 # Site navigation links
 
-- title: About
+- title: 关于
   url: /about/
   icon: info
 
@@ -8,22 +8,22 @@
 #   url: /blog/
 #   icon: pencil
 
-- title: Stories
+- title: 旅行
   url: /stories/
   icon: book
 
-- title: Tags
+- title: 标签
   url: /tags/
   icon: tags
 
-- title: Links
+- title: 友链
   url: /links/
   icon: link
 
-- title: Search
+- title: 搜索
   url: /search/
   icon: search
 
-- title: Loop
+- title: 更新
   url: /loop/
   icon: retweet

@@ -3,7 +3,6 @@ layout: post
 title:  "中学时代"
 tags: school
 description: "The computer world is like an intellectual Wild West, in which you can shoot anyone you wish with your ideas, if you're willing to risk the consequences.<br/>  ——from Hackers & Painters: Big Ideas from the Computer Age."
-categories: stories
 ---
 
 <span class="button button-3d button-caution"><strong>黑客</strong></span>

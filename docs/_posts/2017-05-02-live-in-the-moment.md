@@ -1,7 +1,6 @@
 ---
 title: "Live in the moment"
 tags: hangzhou
-categories: hangzhou
 ---
 
 我想还是应该留在杭州，杭州还是一个比较浪漫（装13）的城市。

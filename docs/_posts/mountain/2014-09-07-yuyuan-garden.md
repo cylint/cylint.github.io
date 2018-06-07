@@ -1,9 +1,11 @@
 ---
 layout: post
-title: IV. Yuyuan Garden Area  
+title: 豫园假山
 tags: [tour guide]
-categories: tour-guide
+categories: stories
 ---
+
+豫园假山
 
 South of the Bund on the west bank of the Huangpu River, Yuyuan Garden Area is a highly historic area. When the township of Shanghai was origenally set up in 1267, this neighborhood has remained the downtown core ever since. Though modernization in later years changed much of its traditon, It is a must for both the locals and foreign visitors to sample the real Chinese life in this city . The restored historic neigborhood offers a wide choice for visitor to see, to do and to think about . The highlights of this area consist mainly of a city temple , a bazaar and a garden, They feature the babyrinth arrangerment of lanes and alleyways, the traditional architecture from different periods , ancient folk entertainment , and an aggregation of a large variety of old trades and products. As a historic area,Yuyuan Garden most crowed place in Shanghai, The garden alone sees over 10,000visitors a day on the average. There is even a saying about it: "A visitor cannot claim that he has been to Shanghai if he misses the Yuyuan Garden and the bazaar."
 Yuyuan Garden

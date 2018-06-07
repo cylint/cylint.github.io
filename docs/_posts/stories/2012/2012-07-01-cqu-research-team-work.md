@@ -1,7 +1,6 @@
 ---
 layout: post
 title:  "在重庆的悲催生活"
-categories: stories
 tags: school
 description:  "The dismal life in Chongqing"
 ---
@@ -36,15 +35,4 @@ description:  "The dismal life in Chongqing"
     </div>
 </center>
 
-
-<center>
-    <div class="photoset-grid-lightbox" data-layout="3">
-        <img src="{{site.imgurl}}/chongqing/DSCF0557_zpscv571ztk.jpg">
-        <img src="{{site.imgurl}}/chongqing/DSCF0564_zpsqdlnhye9.jpg">
-        <img src="{{site.imgurl}}/chongqing/DSCF4492_zpssf5ugisv.jpg">
-        <p>磁器口</p>
-    </div>
-</center>
-
-------
 

@@ -1,13 +1,9 @@
 ---
 layout: post
-title: "Override Author Byline Test Post"
+title: "武当山"
 excerpt: "An article to test overriding the default site author."
-categories: #
+categories: stories
 tags: [sample-post, readability, test]
-comments: true
-share: true
-modified: 2016-06-01T14:18:57-04:00
-author: Author2
 image:
   feature: so-simple-sample-image-7.jpg
   credit: WeGraphics

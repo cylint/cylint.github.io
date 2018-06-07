@@ -4,8 +4,9 @@ title: "武当山"
 excerpt: "An article to test overriding the default site author."
 categories: stories
 tags: [sample-post, readability, test]
+hidelogo: true
 image:
-  feature: so-simple-sample-image-7.jpg
+  feature: /header/wudang-1.jpg
   credit: WeGraphics
   creditlink: wegraphics.net/downloads/free-ultimate-blurred-background-pack/
 ---

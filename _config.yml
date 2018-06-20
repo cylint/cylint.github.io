@@ -31,9 +31,13 @@ collections_dir: docs
 
 # Add you collections here. Remove the 'animals' collection in your site.
 collections:
-  conceptualdesign:
+  conceptdesign:
     output: true
     permalink: /:collection/:path
+  designtools:
+    output: true
+    permalink: /:collection/:path
+
 
 kramdown:
   input: GFM

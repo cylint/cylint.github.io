@@ -12,3 +12,9 @@ permalink: /links/
 </figure>
 
 Links page. Add your content here.
+
+<a href="/designtools">design tools</a>
+
+<hr>
+
+<a href="/conceptdesign">conceptual design</a>

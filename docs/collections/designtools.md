@@ -1,8 +1,8 @@
 ---
 layout: collection
 title: "Structural conceptual design"
-collection: "conceptualdesign"
-permalink: "/conceptualdesign/"
+collection: "designtools"
+permalink: "/designtools/"
 hidelogo: true
 date: 2017-08-08T15:39:55-04:00
 ---

@@ -12,7 +12,7 @@ My cousin used to live in Pittosporum Road, near Century Park. I think it is a p
 <span class="post__tag--blue">positive life</span>
 
 
-![cherry](/images/shanghai/cherry_zpsytewg9ms.jpg)
+![cherry](/images/shanghai/15034810.jpg)
 
 
 Every spring, hundreds of thousands of visitors flock to century park to take in the gorgeous vistas of cherry-blossom time.

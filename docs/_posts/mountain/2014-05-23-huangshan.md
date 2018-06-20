@@ -30,7 +30,7 @@ description: 我乃是潇洒人间一剑仙，青冥宝剑胜龙泉，任凭李�
 
 ![Travel to Mount Huangshan](/images/huangshan/02_zpspmbpwdia.jpg)
 
-<p align="center">在峡谷的尽头，哇！是爱情石哦，等有了心爱的人会再一起来</p>
+<!-- <p align="center">在峡谷的尽头，哇！是爱情石哦，等有了心爱的人会再一起来</p> -->
 
 ------
 
@@ -50,9 +50,9 @@ description: 我乃是潇洒人间一剑仙，青冥宝剑胜龙泉，任凭李�
 
 ![Travel to Mount Huangshan](/images/huangshan/05_zpswkdggavn.jpg)
 
-<p align="center">西递乡，很有山水文化气息的小镇</p>
+<p align="center">西递乡<!-- ，很有山水文化气息的小镇 --></p>
 
 ![Travel to Mount Huangshan](/images/huangshan/06_zpsdb52myvr.jpg)
 
-<p align="center">徽派建筑</p>
+<!-- <p align="center">徽派建筑</p> -->
 

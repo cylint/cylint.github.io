@@ -7,9 +7,9 @@ hidelogo: true
 permalink: /about/
 ---
 
-我是谁？
+
 
 <figure>
-    <img src="/images/header/peppa-pig-infront-of-computer.jpg" alt="peppa pig" class="center non-selectable"/>
+    <img src="/images/header/blog.gif" alt="blog" class="center non-selectable"/>
 </figure>
 

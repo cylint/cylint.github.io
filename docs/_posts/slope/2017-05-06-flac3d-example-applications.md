@@ -8,7 +8,6 @@ main-class: 'css'
 color: '#2DA0C3'
 tags:
 - FLAC3D
-- FISH
 categories:
 twitter_text: 'Fast Lagrangian Analysis of Continua in 3 Dimensions Example Applications'
 introduction: 'Fast Lagrangian Analysis of Continua in 3 Dimensions Example Applications'

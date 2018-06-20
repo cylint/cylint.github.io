@@ -6,9 +6,8 @@ hidelogo: true
 search_omit: true
 permalink: /tags/
 ---
-<figure>
-    <img src="/images/header/tags.jpg" alt="tags-Image" class="center non-selectable"/>
-</figure>
+
+
 {% capture site_tags %}{% for tag in site.tags %}{{ tag | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
 {% assign tags_list = site_tags | split:',' | sort %}
 <ul class="tag-box inline">
@@ -17,7 +16,11 @@ permalink: /tags/
     <li><a href="#{{ this_word }}">{{ this_word }} <span>{{ site.tags[this_word].size }}</span></a></li>
   {% endunless %}{% endfor %}
 </ul>
----
+
+<figure>
+    <img src="/images/divider-top.png" alt="tags-Image" class="center non-selectable"/>
+</figure>
+
 {% for item in (0..site.tags.size) %}{% unless forloop.last %}
   {% capture this_word %}{{ tags_list[item] | strip_newlines }}{% endcapture %}
   <h4 id="{{ this_word }}" class="tag-h4">#{{ this_word }}</h4>

@@ -14,7 +14,6 @@ enable_chat: true
     <img src="/images/header/blog.gif" alt="blog" class="center non-selectable"/>
 </figure>
 
-<div class="text-divider"></div>
 
 <div id="timeline">
 

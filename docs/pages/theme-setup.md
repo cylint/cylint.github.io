@@ -7,7 +7,7 @@ permalink: /theme-setup/
 search_omit: true
 mathjax: true
 image:
-  feature: blue-splash.jpg
+  feature: so-simple-sample-image-1.jpg
 ---
 
 General notes and suggestions for customizing **So Simple Theme**.

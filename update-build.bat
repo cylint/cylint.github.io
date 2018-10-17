@@ -8,4 +8,4 @@ rmdir .sass-cache /s /q
 
 :BUILD
 ECHO ON
-bundle exec jekyll serve --incremental --open-url --trace --force_polling --future 
+bundle exec jekyll serve --incremental --open-url --trace --force_polling --future

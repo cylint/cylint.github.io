@@ -1,5 +1,4 @@
 ---
-layout: blog
 title: 天气条件对工程项目建设工期的影响分析与研究
 buy: http://sci.evenchan.me/
 buytext: 回到首页

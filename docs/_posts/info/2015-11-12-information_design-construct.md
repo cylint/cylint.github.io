@@ -1,5 +1,4 @@
 ---
-layout: blog
 title: 地下工程信息化施工
 buy: http://sci.evenchan.me/
 buytext: 回到首页

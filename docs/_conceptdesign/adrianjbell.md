@@ -6,7 +6,7 @@ family: Equidae
 image:
   credit: pexels.com
   creditlink:
-  thumbnail: http://www.hep.com.cn/xpe/cmcore/resource?uuid=e65f02e-1643-1000-ab19-7aceb1d77bc8&contentType=hep/chiefCommend/cover&sortBy=lastUpdated&reverse=true
+  thumbnail: /images/book-strucdesign/3.jpg
 hidelogo: true  
 ---
 

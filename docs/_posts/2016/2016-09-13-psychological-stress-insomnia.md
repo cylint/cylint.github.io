@@ -2,7 +2,7 @@
 layout: post
 title:  " Psychological Stress Insomnia "
 date:   2016-09-13 01:00:00
-categories: inner
+
 description: there are 366 days in a year, but i'm suffering from insomnia 365 days.how could I sleep?
 tags: inner
 ---

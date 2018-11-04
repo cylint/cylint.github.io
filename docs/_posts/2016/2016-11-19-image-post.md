@@ -1,6 +1,6 @@
 ---
 layout: post
-categories: posts
+
 title: Image Post
 tags: [sample post]
 date-string: NOVEMBER 19, 2016

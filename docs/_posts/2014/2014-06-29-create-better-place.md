@@ -1,6 +1,6 @@
 ---
 layout: post
-categories: inner
+
 title: create a better place
 tags: [inner]
 ---

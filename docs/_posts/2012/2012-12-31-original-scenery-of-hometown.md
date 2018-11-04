@@ -1,10 +1,16 @@
 ---
 layout: post
-title:  "the face of home"
-categories: hometown
-tags: "hometown"
-description: "The song is a native flute quiet and remote, Always sounded the night the moon, the face of home is a vague wistful, Waving goodbye as if the fog, After parting, Homesickness is a tree without rings, Never to grow old."
+title: "家乡的风景"
+excerpt: "Examples and code for displaying images in posts."
+categories: stories
+hidelogo: true
+tags: [万州, 照片]
+comments: true
+share: true
 ---
+
+"The song is a native flute quiet and remote, Always sounded the night the moon, the face of home is a vague wistful, Waving goodbye as if the fog, After parting, Homesickness is a tree without rings, Never to grow old."
+
 
 <span class="post__tag--blue">走过了岁月</span>
 <span class="post__tag">千回万转</span>
@@ -31,11 +37,10 @@ description: "The song is a native flute quiet and remote, Always sounded the ni
 
 
 <center>
-        <div class="photoset-grid-lightbox" data-layout="312">
+    <div class="photoset-grid-lightbox" data-layout="312">
         <img src="/images/hometown/01zpsp3vkhrst.jpg">
         <img src="/images/hometown/02zpsgha1oajn.jpg">
         <img src="/images/hometown/03zps9lcpxgap.jpg">
-        <img src="/images/hometown/04zpsevzisqts.jpg">
         <img src="/images/hometown/06zpso2aapofo.jpg">
         <img src="/images/hometown/05zpsr6fmzklf.jpg">
     <!-- </div> -->
@@ -48,35 +53,11 @@ description: "The song is a native flute quiet and remote, Always sounded the ni
 
 
 <center>
-        <div class="photoset-grid-lightbox" data-layout="321">
+    <div class="photoset-grid-lightbox" data-layout="321">
         <img src="/images/hometown/07zpsrpaxfnmj.jpg">
         <img src="/images/hometown/08zpsowaedogl.jpg">
         <img src="/images/hometown/09zpsqnkhfst5.jpg">
         <img src="/images/hometown/12zpsvg8x664z.jpg">
         <img src="/images/hometown/11zpsskrarpf8.jpg">        
-        <img src="/images/hometown/10zpsnjmamawd.jpg">
     </div>
 </center>
-
-
-<script src="/assets/js/jquery.photoset-grid.js"></script>
-
-<script src="/assets/js/jquery.colorbox.js"></script>
-
-<script type="text/javascript">
-$('.photoset-grid-lightbox').photosetGrid({
-  highresLinks: true,
-  rel: 'withhearts-gallery',
-  gutter: '5px',
-
-  onComplete: function(){
-    $('.photoset-grid-lightbox').attr('style', '');
-    $('.photoset-grid-lightbox a').colorbox({
-      photo: true,
-      scalePhotos: true,
-      maxHeight:'90%',
-      maxWidth:'90%'
-    });
-  }
-});
-</script>

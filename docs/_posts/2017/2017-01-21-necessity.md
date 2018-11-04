@@ -2,7 +2,7 @@
 layout: post
 title:  "NECESSITY"
 date:   2017-1-21 10:11:00
-categories: inner
+
 tags: [career planning]
 ---
 

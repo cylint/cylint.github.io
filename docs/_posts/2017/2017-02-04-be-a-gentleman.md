@@ -2,7 +2,7 @@
 layout: post
 title:  "Be A Gentleman"
 date:   2017-02-04 17:20:00
-categories: inner
+
 tags: [career planning]
 description: "A gentleman is open and poised, a petty man is unhappy and worried."
 img: /assets/img/evenchan-class.jpg

@@ -2,7 +2,7 @@
 layout: post
 title:  " Information Management "
 date:   2016-04-09 12:30:00
-categories: inner
+
 description: I'm glad I finally made a decision. I desire to be a librarian, may it's be my life long career. I can do a good job in information management.
 tags: inner
 ---

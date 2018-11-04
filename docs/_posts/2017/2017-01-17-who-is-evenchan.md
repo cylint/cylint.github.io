@@ -2,7 +2,7 @@
 layout: post
 title:  "Who is evenchan ?"
 date:   2017-1-17 22:11:00
-categories: inner
+
 tags: inner
 description: "The first impression is always where we start."
 img: /assets/img/evenchan-class.jpg

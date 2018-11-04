@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "我适合做技术还是做管理？"
-categories: inner
+
 tags: [career planning]
 description: 
 ---

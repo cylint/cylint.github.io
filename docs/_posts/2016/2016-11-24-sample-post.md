@@ -1,6 +1,6 @@
 ---
 layout: post
-categories: posts
+
 title: Sample Post
 tags: [sample post]
 ---

@@ -1,8 +1,7 @@
 ---
 layout: post
-categories: inner
-title: Image Post
-tags: [inner]
+title: 恢复平静的心态
+tags: [情绪]
 ---
 
 The ideal live state  

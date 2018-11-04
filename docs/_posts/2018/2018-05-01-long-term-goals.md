@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "Long Term Goals"
-categories: blog
 tags: [link]
 author: Author1
 ---

@@ -1,8 +1,7 @@
 ---
 layout: post
-categories: design
 title: 桥梁隧道设计
-tags: design
+tags: 设计
 ---
 
 研究目的：

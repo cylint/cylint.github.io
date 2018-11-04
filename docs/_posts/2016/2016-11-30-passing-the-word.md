@@ -2,7 +2,7 @@
 layout: post
 title:  " Passing the Word"
 date:   2016-11-30 08:00:00
-categories: inner
+
 tags: inner
 description: He'll sit here and he'll say, "Do this! Do that!" And nothing will happen.
 ---

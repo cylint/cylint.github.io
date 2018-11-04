@@ -2,7 +2,7 @@
 layout: post
 title:  "Do what fuck you want"
 date:   2017-02-25 9:20:00
-categories: inner
+
 tags: inner
 description: "Dont do what you should do, do what you want to do. "
 ---

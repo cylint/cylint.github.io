@@ -1,8 +1,7 @@
 ---
 layout: post
 title: 上海市导游资格证考试准备
-tags: [tour guide]
-categories: tour-guide
+tags: [导游]
 date-string: NOVEMBER 19, 2016
 ---
 

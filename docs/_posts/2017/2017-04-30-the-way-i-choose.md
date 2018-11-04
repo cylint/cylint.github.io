@@ -1,7 +1,7 @@
 ---
 title: "I gotta go out the way I gotta go out."
 tags: hangzhou
-categories: hangzhou
+
 ---
 
 曾经想仗剑走天下，但最近状态实在很差，书一直没有看过，经常熬夜玩电脑。

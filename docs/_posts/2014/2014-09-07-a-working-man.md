@@ -2,7 +2,7 @@
 layout: post
 title: a working man is a healthy man     
 tags: inner
-categories: inner
+
 ---
 
 前段时间看到资料 LandXML 标记语言可以用于描述 BIM 模型，可能成为一种通用的转换格式， 出于想了解 LandXML的想法，想读读相关的资料，无奈除了英文网站的内容，没有其他的中文介绍，于是乎读了《XML网页设计实用教程》，想必理念上会有所相通，又读了《HTML、CSS网页设计与布局》，书的内容与LandXML关系不大，都是将的网页，但让我想起了ANSYS的帮助文档，其目录下有 .css .class .html .toc .jar .pdf .chm 等文件，但是主要的内容存在与 .html 内，之前一直认定的和 Javahelp 有关，的确也是如此，有详细介绍如何用 Javahelp 制作帮助文档（包含文件树列表、索引、搜索等，与传统chm类似，由一系列的 html 文件组成的帮助系统），可以实现不同的样式风格，由此可以实现单独使用该帮助文档。

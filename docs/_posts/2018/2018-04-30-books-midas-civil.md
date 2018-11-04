@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "Midas civil bridge design"
-categories: blog
 tags: [midas]
 author: Author1
 hidelogo: true

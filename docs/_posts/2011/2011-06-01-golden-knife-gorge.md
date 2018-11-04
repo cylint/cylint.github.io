@@ -2,9 +2,10 @@
 layout: post
 title:  "金刀峡"
 categories: stories
-tags: school
-description:  "The dismal life in Chongqing"
+tags: [旅游, 重庆]
 ---
+
+走进大学，走进自然，记一次同学出游。
 
 <!-- <img src="/images/mountain/golden/golden-4.jpg"> -->
 

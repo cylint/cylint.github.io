@@ -2,7 +2,7 @@
 layout: post
 title:  "Managing my Academic career"
 date:   2015-4-15 12:58:58
-categories: posts
+
 tags: [career planning]
 description: Preface to the chinese edition of managing your academic career.
 ---

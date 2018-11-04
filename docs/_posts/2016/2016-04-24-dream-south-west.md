@@ -1,6 +1,6 @@
 ---
 layout: post
-categories: posts
+
 title: "寻梦西南"
 tags: [career planning]
 date-string: #

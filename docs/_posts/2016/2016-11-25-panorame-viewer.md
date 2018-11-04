@@ -1,6 +1,6 @@
 ---
 layout: post
-categories: posts
+
 title: Panorame-Viewer
 tags: [sample post]
 ---

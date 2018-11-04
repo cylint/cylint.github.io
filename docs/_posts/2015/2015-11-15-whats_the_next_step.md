@@ -2,7 +2,7 @@
 layout: post
 title:  "Sophie, what's the next step ?"
 date:   2015-11-15 0:11:00
-categories: posts
+
 tags: [career planning]
 description: I cannot choose the best. The best chooses me. 
 ---

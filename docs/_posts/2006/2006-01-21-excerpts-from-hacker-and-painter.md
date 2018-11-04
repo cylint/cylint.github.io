@@ -1,16 +1,13 @@
 ---
 layout: post
-title:  "中学时代"
-tags: school
-description: "The computer world is like an intellectual Wild West, in which you can shoot anyone you wish with your ideas, if you're willing to risk the consequences.<br/>  ——from Hackers & Painters: Big Ideas from the Computer Age."
+title:  "黑客和画家摘录"
+tags: "万州"
 ---
 
-<span class="button button-3d button-caution"><strong>黑客</strong></span>
-<span class="button button-3d button-royal"><strong>画家</strong></span>
 
-------
+The computer world is like an intellectual Wild West, in which you can shoot anyone you wish with your ideas, if you're willing to risk the consequences.<br/>  ——from Hackers & Painters: Big Ideas from the Computer Age.
 
-	
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我读中学的时候，自杀是聪明学生中永恒的话题，虽然在我认识的人当中没有人真的自杀，但是不少人有这样的设想，其中一些人可能还真的尝试过。对于大多数人来说，自杀只是一个姿态。就像其他青少年一样，我们都喜欢有戏剧效果，而自杀看上去就非常富有戏剧性。但是也有部分原因是因为我们的生活有时真的是非常悲惨。
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;被其他小孩欺负只是问题的一部分。还有别的问题存在，甚至可能是更糟糕的问题。那就是我们没有得到真正的工作，没能发挥我们的才能。人类喜欢工作，在世界上大多数地方，你的工作就是你的身份证明。但是，我们那时做的所有事情跟本就是无意义的，至少那时看来是这样。

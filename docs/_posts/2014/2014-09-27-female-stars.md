@@ -2,7 +2,7 @@
 layout: post
 title: 喜欢的女明星    
 tags: inner
-categories: inner
+
 ---
 
 袁咏仪	

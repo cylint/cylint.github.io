@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  " Making a career change "
-categories: posts
+
 tags: [career planning]
 description: After much hesitation, I made a decision. I will take part in the postgraduate entrance examination of CQU Engineering Management, making a career change from technician to manager, leaving technical  problems to the engineers.
 ---

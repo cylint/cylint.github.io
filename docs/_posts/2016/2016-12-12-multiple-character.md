@@ -2,7 +2,7 @@
 layout: post
 title: 我的忧郁生活和多重性格  
 tags: inner
-categories: inner
+
 ---
 
 为什么我经常过得很忧郁，而且总不得志？

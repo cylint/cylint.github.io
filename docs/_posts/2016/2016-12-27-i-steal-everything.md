@@ -2,7 +2,7 @@
 layout: post
 title:  " i know! I steal everything. "
 date:   2016-12-27 01:00:00
-categories: inner
+
 description: life is tough but we soldier on, and that's just the way it goes.
 tags: inner
 ---

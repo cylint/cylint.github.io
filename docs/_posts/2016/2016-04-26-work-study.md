@@ -1,6 +1,6 @@
 ---
 layout: post
-categories: posts
+
 title: "在工作和学习之间必须有一个取舍"
 tags: [career planning]
 date-string: #

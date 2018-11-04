@@ -1,8 +1,7 @@
 ---
 layout: post
-title:  "Find Shanghai and Lost in Shanghai"
-date:   2012-8-17 22:11:00
-categories: gallery
+title:  "第一回到上海"
+categories: stories
 ---
 
 

@@ -1,12 +1,12 @@
 ---
 layout: post
-title:  "在重庆的悲催生活"
-tags: school
+title:  "大学生活"
+tags: [重庆, 大学]
 description:  "The dismal life in Chongqing"
 ---
 
-<span class="post__tag--blue">重庆</span>
-<span class="post__tag">嘉陵江畔度青春</span>
+
+蜀中忆，最忆是重庆，嘉陵江畔度青春——吴冠中
 
 ------
 

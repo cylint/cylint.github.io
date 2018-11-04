@@ -1,7 +1,7 @@
 ---
 title: "Whats the plan of this summer"
 tags: hangzhou
-categories: hangzhou
+
 ---
 
 就当我在扯淡，有一段时间没有胡思乱想了，但也没有去学习，书借回来就放在那里，也不想再翻。

@@ -1,6 +1,6 @@
 ---
 layout: post
-categories: inner
+
 title: Goodness and badness
 tags: inner
 ---

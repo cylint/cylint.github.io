@@ -9,7 +9,7 @@ image:
 The WENYI RD TUNNEL was opened to traffic on October 18th.
 
 
-<img src="/images/wyltunnel/1.jpeg">
+<!-- <img src="/images/wyltunnel/1.jpeg"> -->
 
 <img src="/images/wyltunnel/2.jpg">
 
@@ -19,5 +19,5 @@ The WENYI RD TUNNEL was opened to traffic on October 18th.
 
 <img src="/images/wyltunnel/6.jpg">
 
-<img src="/images/wyltunnel/5.jpg">
+<!-- <img src="/images/wyltunnel/5.jpg"> -->
 

@@ -2,7 +2,7 @@
 layout: post
 title:  "Break Down"
 date:   2017-02-21 9:20:00
-categories: inner
+
 tags: inner
 description: "Even in failure, remedies must be employed. "
 ---
@@ -15,7 +15,7 @@ description: "Even in failure, remedies must be employed. "
 
 喜欢广州的一点，在广州火车站有这样的醒目标语“统一祖国，振兴中华”。
 
-![Guangzhou]({{site.url}}/assets/img/guangzhou.jpg)
+![Guangzhou](/images/guangzhou/guangzhou.jpg)
 
 在杭州这个安逸的地方习惯了，其实除了工作我什么也没有。
 每天都把自己裹在工作服里面，对于有工作却没有多少事情做的日子过着还真不习惯，其实还有人比我更闲，这就是国企的特色吗？工作的回报并不因为自己时间和精力投入更多而提升，准确说来我们都不是时间自由的人，我们还是在依赖时间来挣钱，再换取将来可能的生活。

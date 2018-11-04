@@ -2,7 +2,7 @@
 layout: post
 title:  " I quit the test "
 date:   2016-12-29 22:00:00
-categories: inner
+
 description: 'I quit the test. I missed the test of structure engineer this year.'
 tags: inner
 ---

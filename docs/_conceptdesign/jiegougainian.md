@@ -1,6 +1,6 @@
 ---
 layout: animal
-title: Zebra
+title: 结构概念和体系
 class: 	Mammalia
 family: Equidae
 image:

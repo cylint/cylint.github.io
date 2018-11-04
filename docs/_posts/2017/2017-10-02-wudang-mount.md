@@ -10,3 +10,8 @@ image:
   credit: WeGraphics
   creditlink: url
 ---
+
+<figure class="half">
+	<img src="/images/wudang/20171001-DSC00840.jpg" alt="image">
+	<figcaption>紫霄宫</figcaption>
+</figure>

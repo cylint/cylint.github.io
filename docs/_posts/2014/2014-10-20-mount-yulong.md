@@ -1,8 +1,9 @@
 ---
 layout: post
-title:  "Jade dragon snow mountain & impression Lijiang"
+title:  "印象丽江"
 date:   2014-10-20 22:11:00
 categories: stories
+tags: [丽江 旅游 玉龙雪山]
 description: "Lijiang: members of the naxi, yi and bai ethnic minorities perform a show entitled impression lijiang, with jade dragon snow mountain as a backdrop."
 ---
 
@@ -65,27 +66,5 @@ description: "Lijiang: members of the naxi, yi and bai ethnic minorities perform
 </center>
 
 
-
-<script src="/assets/js/jquery.photoset-grid.js"></script>
-
-<script src="/assets/js/jquery.colorbox.js"></script>
-
-<script type="text/javascript">
-$('.photoset-grid-lightbox').photosetGrid({
-  highresLinks: true,
-  rel: 'withhearts-gallery',
-  gutter: '5px',
-
-  onComplete: function(){
-    $('.photoset-grid-lightbox').attr('style', '');
-    $('.photoset-grid-lightbox a').colorbox({
-      photo: true,
-      scalePhotos: true,
-      maxHeight:'90%',
-      maxWidth:'90%'
-    });
-  }
-});
-</script>
 
 

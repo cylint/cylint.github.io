@@ -3,7 +3,7 @@ layout: post
 title:  "印象丽江"
 date:   2014-10-20 22:11:00
 categories: stories
-tags: [丽江 旅游 玉龙雪山]
+tags: [丽江, 旅游, 玉龙雪山]
 description: "Lijiang: members of the naxi, yi and bai ethnic minorities perform a show entitled impression lijiang, with jade dragon snow mountain as a backdrop."
 ---
 

@@ -1,10 +1,10 @@
 # Site wide configuration
 
-title: MarcEwing's Diary
+title: Three Trees
 locale: en-US
 timezone: Asia/Shanghai
 # description: Theme based on So Simple Theme
-logo: language.svg
+logo: three-pine-trees-hi.png
 search: true
 url: https://threetrees.net
 external_data_url: # common url for images and other external data

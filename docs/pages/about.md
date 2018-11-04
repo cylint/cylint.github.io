@@ -21,10 +21,14 @@ enable_chat: true
   <div class="timeline-item">
   <div class="timeline-icon"><img src="/images/timeline/micronaut-white-transparent.png" alt=""></div>
     <div class="timeline-content">
-        <h3>你幸福吗？</h3>
-        <p id="tags">我信佛 · 佛山的佛</p>
-        <p>到珠海，就能面朝大海，</p> 
-        <p>回老家，就可以喂猪、劈柴。</p>
+        <h3>对这个世界如果你有太多的抱怨</h3>
+        <p>跌倒了 就不敢继续往前走</p>
+        <p>为什么 人要这么的脆弱 堕落</p> 
+        <p>请你打开电视看看</p>
+        <p>多少人为生命在努力勇敢的走下去</p>
+        <p>我们是不是该知足</p>
+        <p>珍惜一切就算没有拥有</p>
+
     </div>
   </div>
 	
@@ -32,12 +36,11 @@ enable_chat: true
   <div class="timeline-item">
     <div class="timeline-icon"><img src="/images/timeline/white-hat.png" alt=""></div>
     <div class="timeline-content right">
-      <h3>你的梦想是什么？</h3>
-      <p id="tags">我的梦想 · 搏击长空</p>
-      <p>曾幻想，越过山丘，</p>
-      <p>曾幻想，探索宇宙，</p>
-      <p>曾幻想，成为Geek，</p>
-      <p>实际上，梦想被工地耽误了很多年。</p>
+      <h3>一个人至少拥有一个梦想</h3>
+      <p>一个理由去坚强</p>
+      <p>心若没有栖息的地方</p>
+      <p>到哪里都是流浪</p>
+      <p>——三毛</p>
     </div>
   </div>
 

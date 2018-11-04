@@ -1,6 +1,9 @@
 ---
 title: 文一路隧道开通
 tags: TUNNEL
+hidelogo: true
+image:
+  feature: /header/wyltunnel0.jpg
 ---
 
 The WENYI RD TUNNEL was opened to traffic on October 18th.

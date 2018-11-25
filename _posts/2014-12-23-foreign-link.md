@@ -6,5 +6,6 @@ author: sobolevn
 categories: bash
 short_description: This is an overview post about testing frameworks in bash.
 image_preview: /images/icon-linux@2X.png
-external_url: https://habrahabr.ru/post/278937/
 ---
+
+<!-- external_url: # -->

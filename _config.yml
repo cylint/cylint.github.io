@@ -1,10 +1,10 @@
 # Welcome to Jekyll!
 
 # Site settings
-title: jekyll-theme-hackcss
+title: Three Trees
 description: > # this means to ignore newlines until "baseurl:"
-  A minimalistic theme for Jekyll, based on hack.css
-repository: https://github.com/wemake-services/jekyll-theme-hackcss
+  Learning Skills of Geotechnical Software
+# repository: https://github.com/wemake-services/jekyll-theme-hackcss
 # baseurl: /jekyll-theme-hackcss  # the subpath of your site, e.g. /blog
 url: https://cylint.github.io  # the base hostname & protocol for your site
 
@@ -19,8 +19,8 @@ sass:
 theme_mode: standard  # choices are: 'dark', 'standard', 'markdown'
 
 # Customizations
-your_name: wemake.services
-email: mail@sobolevn.me
+your_name: three.trees
+email: erichueng@gmail.com
 
 navigation:
   - text: Home
@@ -35,19 +35,19 @@ navigation:
 projects:
   - name: FLAC 3D
     description: A bash-tool to store your private data inside a git repository.
-    link: https://sobolevn.github.io/git-secret
+    link: #
     image: /images/flac3d/borehole-disp6.png
-  - name: awesome-cryptography
-    description: Plaxis
-    link: https://github.com/sobolevn/awesome-cryptography
+  - name: Plaxis
+    description: Plaxis 2d / 3d / Tunnel
+    link: #
     image: /images/flac3d/splash3df.jpg
   - name: Geo Studio
     description: Automatically creates slugs for your Ecto models.
-    link: https://github.com/sobolevn/ecto_autoslug_field
+    link: #
     image: /images/flac3d/geo_studio.jpg
   - name: midas
     description: Organize Django settings into multiple files and directories. Easily override and modify settings. Use wildcards and optional settings files.
-    link: https://github.com/sobolevn/django-split-settings
+    link: #
     image: /images/flac3d/3dtunnelshell.jpg
 
 social:

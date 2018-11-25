@@ -1,5 +1,0 @@
----
-permalink: /feed.blog.xml
-sitemap: false
----
-{% include category-feed.xml postlist=site.categories.blog taxonomy='blog' %}

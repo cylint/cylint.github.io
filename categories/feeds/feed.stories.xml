@@ -1,5 +1,0 @@
----
-permalink: /feed.stories.xml
-sitemap: false
----
-{% include category-feed.xml postlist=site.categories.stories taxonomy='stories' %}

@@ -55,5 +55,5 @@ social:
     link: https://twitter.com/sobolevn
 
 # Plugins
-plugins:
+plugins_dir:
   - jekyll-seo-tag

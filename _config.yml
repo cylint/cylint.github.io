@@ -27,8 +27,10 @@ navigation:
     url: /
   - text: Docs
     url: /docs
-  - text: Examples
-    url: /examples
+  - text: Skill
+    url: /skill
+  - text: Blog
+    url: /blog
 
 projects:
   - name: FLAC 3D

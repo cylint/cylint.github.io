@@ -19,6 +19,9 @@ Clone this repo. Create your own website. Easy.
 
 See [docs](https://github.com/wemake-services/jekyll-theme-hackcss/blob/gh-pages/docs.md).
 
+https://hackcss.egoist.moe/
+
+
 ## License
 
 GNU PGL 3. See [LICENSE](https://github.com/wemake-services/jekyll-theme-hackcss/blob/3cbe97b71a56a19eba386dd928e125b71e50c71e/LICENSE) for more information.

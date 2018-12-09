@@ -25,9 +25,9 @@ email: erichueng@gmail.com
 navigation:
   - text: Home
     url: /
-  - text: Docs
-    url: /docs
-  - text: Skills
+  - text: Theme Setup
+    url: /setup
+  - text: Skills and Tools
     url: /skills
   - text: Blog
     url: /blog
@@ -35,7 +35,7 @@ navigation:
 projects:
   - name: FLAC 3D
     description: A bash-tool to store your private data inside a git repository.
-    link: #
+    link: /flac3d/
     image: /images/flac3d/borehole-disp6.png
   - name: Plaxis
     description: Plaxis 2d / 3d / Tunnel

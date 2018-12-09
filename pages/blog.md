@@ -3,13 +3,6 @@ layout: default
 permalink: blog
 ---
 
-<section>
-  <h1>Examples</h1>
-
-  <p>
-    This is more like an example page with different widgets.
-  </p>
-</section>
 
 <section>
   <h2>Posts</h2>

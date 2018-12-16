@@ -1,42 +1,14 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en-US">
+<head>
   {% include head.html %}
-
-
-  {% if site.theme_mode == 'markdown' %}
-  <body class="hack">
-  {% elsif site.theme_mode == 'standard' %}
-  <body class="standard">
-  {% elsif site.theme_mode == 'dark' %}
-  <body class="hack dark">
-  {% endif %}
-{% comment %}
-    {% include github-ribbon.html %}
-{% endcomment %}
-    <div class="container">
-
-        <!-- <aside class="cell -3of12" role="navigation"> -->
-        <aside class="cell -top" role="navigation">
-          {% include navigation.html %}
-        </aside>
-
-
-      <div class="grid">
-
-
-        <!-- <main class="cell -9of12"> -->
-        <main class="cell -12of12">
-          {{ content }}
-        </main>
-      </div>
-
-    {% include footer.html %}
-
-    </div>
-
-    <!-- Prism.js -->
-    <script src="https://npmcdn.com/prismjs@1.5.1/prism.js"></script>
-  </body>
-
+</head>
+<body>
+  {% include header.html %}
+  {{ content }}
+  {% include footer.html %}
+  <script>
+  {% include scripts.js %}
+  </script>
+</body>
 </html>

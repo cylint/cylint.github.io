@@ -1,0 +1,86 @@
+.aboutpage_content
+{
+  display: flex;
+  justify-content: space-between;
+  @include break(975px)
+  {
+    flex-direction: column;
+  }
+}
+
+.aboutpage_profilepic
+{
+  order: 2;
+  flex-basis: 40%;
+  display: flex;
+  align-items: flex-start;
+  margin-left: $horzPad;
+  text-align: center;
+  img {
+    width: 100%;
+  }
+  @include break(975px)
+  {
+    order: 0;
+    width: 90%;
+    margin: 0 auto $horzPad auto;
+  }
+}
+
+.aboutpage_text
+{
+  flex-basis: 60%;
+  display: flex;
+  flex-direction: column;
+}
+
+.list
+{
+
+  h3
+  {
+    padding: 3px 1rem 0 1rem;
+    transition: color .5s ease-in-out;
+    transition: background-color .4s ease-in-out;
+    border-bottom: 5px solid $theme-about;
+    margin: 0;
+  }
+
+  &:hover h3
+  {
+    color: $color-white;
+    background-color: $theme-about;
+
+    a { color: $color-white; text-decoration: underline;}
+  }
+
+}
+
+.bullet-group
+{
+
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  li
+  {
+    width: 100%;
+  }
+  &.threeColumn li
+  {
+    width: 30%;
+    @include break(560px) { width: 50%;}
+  }
+  &.twoColumn li
+  {
+    width: 50%;
+    @include break(500px) { width: 100%;}
+  }
+}
+
+.builtWith
+{
+  background: $color-alabasterWhite;
+  padding: 10px;
+  border-left: 5px solid $color-grey;
+}

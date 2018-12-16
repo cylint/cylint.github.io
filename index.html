@@ -1,26 +1,59 @@
 ---
 layout: default
+title: Three Trees Blog
+description: Hi, I'm a nerd.  Yep.  That's about it.
+theme: home
 ---
 
-<div>
+{% for post in site.posts limit:1 %}
+<main class="hero">
+
+  <a href="{{ post.url }}"
+    class="heroEye"
+    style="background-image: url('{% if post.image %}{{post.image}}{% else %}{{ site.image}}{% endif %}');">
+  </a>
+
+  <article class="heroText">
+    <h1><a href="{{ site.prefix }}{{ post.url }}">{{ post.title }}</a></h1>
+    <p>{{ post.description }} <br><a href="{{ post.url }}">Read more...</a></p>
+  </article>
+
+</main>
+{% endfor %}
+
+<div class="homepageContainer">
 
   <section>
-
-
-    <h2>Getting started</h2>
-
-
+    {% for post in site.posts offset: 1 limit: 5 %}
+    <article class="postBlurb" itemscope itemtype="http://schema.org/Article">
+      <h2 itemprop="name">
+        <a href="{{ site.prefix }}{{ post.url }}" itemprop="url">{{ post.title }}</a>
+      </h2>
+      <time itemprop="datePublished">{{ post.date | date: "%b %-d, %Y" }}</time>
+      <p itemprop="description">
+        {{ post.description }}<a href="{{ post.url }}" itemprop="url">... Read more</a>
+      </p>
+    </article>
+    {% endfor %}
   </section>
 
-  <section>
 
-<img src="/images/Compose_icon.png">
+  <aside class="homepageAside">
+    <h3>More Stuff</h3>
+    <ul class="asidePosts">
+      <li>
+        <a href="https://github.com/cppfish">Github</a>
+      </li>
+      <li>
+        <a href="{{ site.prefix }}/articles">All Posts</a>
+      </li>
 
-    <h2>订阅</h2>
-
-    <p>
-      订阅这个功能肯定极少有人用了。 <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a>
-    </p>
-  </section>
+    {% for post in site.posts offset: 6 limit: 10 %}
+      <li>
+        <a href="{{ site.prefix }}{{ post.url }}">{{ post.title }}</a>
+      </li>
+    {% endfor %}
+    </ul>
+  </aside>
 
 </div>

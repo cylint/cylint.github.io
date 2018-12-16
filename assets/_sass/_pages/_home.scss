@@ -1,0 +1,74 @@
+.hero
+{
+    @include primaryContainerSize;
+    background-color: $color-white;
+    box-shadow: $containerShaddow;
+}
+
+.heroEye
+{
+  width: 100%;
+  height: 250px;
+  display: block;
+  background-size: cover;
+  background-position: top;
+  background-color: $color-alabasterWhite;
+  border-bottom: 1px solid $color-mercuryWhite;
+  box-shadow: 0 4px 3px -3px rgba(45, 45, 45, .2);
+}
+
+.heroText
+{
+    padding: 6px $horzPad $horzPad;
+    h1, p { margin: 0 }
+}
+
+.homepageContainer
+{
+    display: flex;
+    flex-direction: row;
+    // flex-direction: column;
+    @include primaryContainerSize;
+}
+
+
+.homepageAside
+{
+    // width: 40%;
+    min-width: 250px;
+    height: 400px;
+    margin-left: 1rem;
+    background-color: $color-white;
+    box-shadow: $containerShaddow;
+    @include break(750px){ display: none; }
+}
+
+.homepageAside h3
+{
+    background-color: $theme-home;
+    color: $color-white;
+    padding: 0.5rem 1rem;
+    margin: 0;
+}
+
+.homepageAside ul
+{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    background-color: $color-white;
+
+  a
+  {
+    padding: 6px $horzPad;
+    display: block;
+    color: $color-grey;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  a:hover
+  {
+      color: $aLinkBlue;
+      background-color: rgba(226, 226, 226, 0.5);
+  }
+}

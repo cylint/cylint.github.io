@@ -1,0 +1,6 @@
+.blogpageContainer { @include primaryContainerSize; }
+.blogpageContainer .postBlurb
+{
+  h2 { border-color: $theme-blog; }
+  &:hover h2 a { background-color: $theme-blog; }
+}

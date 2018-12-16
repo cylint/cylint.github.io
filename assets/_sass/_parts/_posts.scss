@@ -1,0 +1,39 @@
+.post_content
+{
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.post_content  h1
+{
+  font-size: 45px;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+
+.post_content img
+{
+  display: block;
+  max-width: 90%;
+  margin: 10px auto;
+  text-align: center;
+}
+
+.post_content hr
+{
+  margin-top: 0;
+  opacity: .6;
+  border: 1px solid $color-riverBed;
+  margin: 0.75rem (-$horzPad);
+}
+
+.post_content h2
+{
+  margin-bottom: 5px;
+}
+
+.post_content figure.highlight
+{
+  margin: auto (-$horzPad);
+}

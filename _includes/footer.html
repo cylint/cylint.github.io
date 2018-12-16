@@ -1,32 +1,17 @@
-<footer class="t-hackcss-footer">
-  <hr />
-
-  <h3 class="footer-heading">{{ site.title }}</h3>
-
-  <div class="grid t-hackcss-sm-reversed-grid">
-
-    <div class="cell -5of12">
-      <div class="contact-list">
-        <p>
-          {{ site.your_name }},
-          <a href="mailto:{{ site.email }}">{{ site.email }}</a>
-        </p>
-
-        {% for social in site.social %}
-          {% assign template = social.service|prepend:"icon-"|append:".html" %}
-          <span class="t-hackcss-social">
-            <i class="t-hackcss-icon">{% include {{ template }} %}</i>
-            <a href="{{ social.link }}">{{ social.username }}</a>
-          </span>
-        {% endfor %}
-      </div>
-    </div>
-
-    <div id="footer-spacer" class="cell -1of12"></div>
-
-    <div class="cell -6of12">
-      <p>{{ site.description }}</p>
-    </div>
+<footer>
+  <p class="copyright">&copy;2014 - 20{{ site.time | date: '%y' }}</p>
+  <div class="footerIcons">
+    <a href="/feed.xml">
+      <svg class="socialIcon rss"><use xlink:href="#shape-rss"/></svg>
+    </a>
+    <a href="https://www.linkedin.com/in/erichueng">
+      <svg class="socialIcon linkedin"><use xlink:href="#shape-linkedin"/></svg>
+    </a>
+    <a href="https://github.com/cppfish">
+      <svg class="socialIcon github"><use xlink:href="#shape-github"/></svg>
+    </a>
+<!--     <a href="https://www.behance.net/#" >
+      <svg class="socialIcon behance"><use xlink:href="#shape-behance"/></svg>
+    </a> -->
   </div>
-
 </footer>

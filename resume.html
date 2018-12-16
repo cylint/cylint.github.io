@@ -1,0 +1,58 @@
+---
+layout: page
+title: Eric - Resume
+permalink: /resume/
+description: My name is Sam and I love LAMP.
+image: #
+theme: home
+hideComments: true
+---
+
+<!-- theme: resume -->
+<section>
+<header class="post-header aboutHeader resumeHeader">
+	<div class="icon">
+		<img src="https://media.licdn.com/dms/image/C4E03AQFZEpsuciVLgA/profile-displayphoto-shrink_200_200/0?e=1550707200&v=beta&t=D_VlXh5nURmaL3PwxzXxB943BkgNhvOO_yx_CCOBugE">
+	</div>
+</header>
+
+<hr size=3 color=#4583B3 style="FILTER: alpha(opacity=100,finishopacity=0,style=1)"> 
+
+
+<div class="info">
+	{% for item in site.data.resume.experience %}
+		<h3>{{item.title}} @
+			{% if item.company-url %} <a href="{{item.company-url}}">{{item.company}}</a>
+		    	{% else %} {{item.company}}
+		    {% endif %}
+		</h3>
+
+		<p> {{item.start-date}} -- {{item.end-date}}</p> 
+
+      <ul class="bullet-group">
+        {% for about in item.about %}
+        <li>{{about}}</li>
+        {% endfor %}
+      </ul>
+
+
+</div>
+
+
+{% endfor %}
+
+
+<hr size=3 color=#4583B3 style="FILTER: alpha(opacity=100,finishopacity=0,style=1)"> 
+
+
+
+
+<div class="info">
+    <h3>Email & Tel</h3>
+    <p><a href="mailto:erichueng@gmail.com">erichueng@gmail.com</a> | <a href="tel:18667193469">(+86)-18667193469</a></p>
+  </div>
+
+
+  <button class="print_hide resume_print" onclick="window.print()">Print or Save as PDF</button>
+  
+</section>

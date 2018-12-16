@@ -1,65 +1,37 @@
-# Welcome to Jekyll!
-
 # Site settings
 title: Three Trees
-description: > # this means to ignore newlines until "baseurl:"
-  Learning Skills of Geotechnical Software
-# repository: https://github.com/wemake-services/jekyll-theme-hackcss
-# baseurl: /jekyll-theme-hackcss  # the subpath of your site, e.g. /blog
-url: https://cylint.github.io  # the base hostname & protocol for your site
+email: erichueng@gmail.com
+description: "欢迎阅读Three Trees的博客"
+baseurl: ""
+url: "https://threetrees.net"
+twitter_username: #sam_pedley
+github_username:  cppfish
+include: ['.htaccess']
+keywords: cppfish 'Three Trees'
 
 # Build settings
 markdown: kramdown
-
-# Sass settings
+permalink: /:categories/:title/
+highlighter: rouge
 sass:
+  sass_dir: assets/_sass
   style: compressed
 
-# Theme settings
-theme_mode: standard  # choices are: 'dark', 'standard', 'markdown'
-
-# Customizations
-your_name: three.trees
-email: erichueng@gmail.com
-
-navigation:
-  - text: Home
-    url: /
-  - text: Theme Setup
-    url: /setup
-  - text: Skills and Tools
-    url: /skills
-  - text: Blog
-    url: /blog
-
-projects:
-  - name: FLAC 3D
-    description: A bash-tool to store your private data inside a git repository.
-    link: /flac3d/
-    image: /images/flac3d/borehole-disp6.png
-  - name: Plaxis
-    description: Plaxis 2d / 3d / Tunnel
-    link: #
-    image: /images/flac3d/splash3df.jpg
-  - name: Geo Studio
-    description: Automatically creates slugs for your Ecto models.
-    link: #
-    image: /images/flac3d/geo_studio.jpg
-  - name: midas
-    description: Organize Django settings into multiple files and directories. Easily override and modify settings. Use wildcards and optional settings files.
-    link: #
-    image: /images/flac3d/3dtunnelshell.jpg
-
-social:
-  - service: github
-    username: cppfish
-    link: https://github.com/cppfish
-  - service: twitter
-    username: #
-    link: https://twitter.com/#
-
-# Plugins
-plugins:
-  - jekyll-seo-tag
+#Site Variables
+image: /assets/images/banner3.jpg
+# Nav Bar Data
+nav:
+- name: Home
+  url: /
+- name: About
+  url: /about
+- name: Articles
+  url: /articles
 
 exclude: [update_rubygems.bat, update-build.bat, update-commit.bat]
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: post

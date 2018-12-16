@@ -1,0 +1,41 @@
+footer
+{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 6px;
+  background-color: $color-white;
+  @include primaryContainerSize;
+}
+
+.copyright{
+  margin: 0;
+  color: $backgroundColor;
+  transition: color .2s ease-in-out;
+  &:hover{ color:$theme-about; }
+}
+
+
+// -------- Social Icons --------
+.footerIcons
+{
+  height: 40px;
+  overflow: hidden;
+  a
+  {
+    margin: 0 3px;
+    display: inline-block;
+    box-sizing: border-box;
+  }
+}
+.socialIcon
+{
+  width: 40px;
+  height: 40px;
+  fill: $socialIcons;
+  transition: fill .2s ease-in-out;
+}
+.github:hover { fill: $github; }
+.linkedin:hover { fill: $linkedin; }
+.rss:hover { fill: $rss; }
+.behance:hover { fill: $behance; }

@@ -1,36 +1,37 @@
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+{% if page.description %}
+  {% assign description = page.description %}
+{% else %}
+  {% assign description =  site.description %}
+{% endif %}
 
-  <!-- Favicon -->
-  <link rel="icon" href="{{ "/favicon.png" | prepend: site.baseurl }}">
+{% if page.title %}
+  {% assign title = page.title %}
+{% else %}
+  {% assign title = site.title %}
+{% endif %}
 
-  <!-- Meta information -->
-  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-  <meta name="description"
-        content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-  <link rel="canonical"
-        href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
+<title>{{title}}</title>
 
-  <!-- hack.css -->
-  <link rel="stylesheet" href="https://npmcdn.com/hack/dist/hack.css" />
-  {% if site.theme_mode == 'standard' %}
-  <link rel="stylesheet" href="https://npmcdn.com/hack/dist/standard.css" />
-  {% elsif site.theme_mode == 'dark' %}
-  <link rel="stylesheet" href="https://npmcdn.com/hack/dist/dark.css" />
-  {% endif %}
+<meta charset="UTF-8">
+<meta name="robots" content="index, follow" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="description"  content="{{description}}" />
 
-  <!-- Prism.js -->
-  <link rel="stylesheet" href="https://npmcdn.com/prismjs@1.5.1/themes/prism.css" />
+<!-- twitter -->
 
-  <!-- Custom style -->
-  <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}" />
+<meta property="og:description" content="{{description}}" />
+<meta property="og:site_name" content="Three Trees" />
+<meta property="og:title" content="{{title}}" />
+<meta property="og:type" content="Tech" />
+<meta property="og:image" content="https://threetrees.net/assets/images/hzcity.jpg" />
+<meta property="og:url" content="https://threetrees.net" />
 
-  <!-- Feed -->
-  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}"
-        href="{{ "/feed.xml" | prepend: site.baseurl }}" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="{{ "/assets/styles.css" | prepend: site.baseurl }}">
 
-  <!-- 'jekyll-seo' plugin -->
-  {% seo %}
-</head>
+<!-- <link rel="stylesheet" href="{{ "/assets/custom.css" | prepend: site.baseurl }}"> -->
+<!-- <link rel="stylesheet" href="https://npmcdn.com/hack/dist/standard.css" /> -->
+
+{% include svg-defs.svg %}

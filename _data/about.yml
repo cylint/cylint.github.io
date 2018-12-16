@@ -1,0 +1,15 @@
+likes:
+- Jekyll
+- Matlab
+- Python
+- Blender
+- Flac3D
+
+contact:
+- name: Email
+  url: mailto:erichueng@gmail.com
+
+- name: Linkedin
+  url: https://www.linkedin.com/in/erichueng
+- name: wechat
+  url: false

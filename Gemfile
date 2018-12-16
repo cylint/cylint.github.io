@@ -1,5 +1,4 @@
-# frozen_string_literal: true
-source "https://rubygems.org"
+source 'https://rubygems.org'
 
-gem "jekyll", ">= 3.8.5"
-gem 'jekyll-seo-tag', '~> 2.5'
+gem 'jekyll', '3.1.1'
+gem 'rouge', '1.10.1'

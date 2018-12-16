@@ -1,0 +1,23 @@
+//--------------------- Global & Primary classes --------------------
+body
+{
+    font-family: Open Sans, helvetica,  sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    background-color: $backgroundColor;
+    color: $color-shaftBlack;
+}
+
+h1 { font-weight: 600; }
+
+a
+{
+    transition: all .3s ease-in-out;
+    color: $aLinkBlue;
+    text-decoration: none;
+    &:hover { color: $aLinkHover; }
+}
+
+img { max-width: 100%; }
+
+table { border-color: $backgroundColor; }

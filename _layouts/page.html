@@ -22,8 +22,10 @@ layout: default
 
 </main>
 
+{% comment %}
 {% if page.hideComments != true %}
 <section class="comments" itemprop="Comment">
   {% include comments.html %}
 </section>
 {% endif %}
+{% endcomment %}

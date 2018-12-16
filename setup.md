@@ -3,6 +3,7 @@ layout: post
 permalink: setup
 ---
 
+
 <!-- header.html -->
 <!-- 
   <a href="{{ site.baseurl }}/" class="header_logo">

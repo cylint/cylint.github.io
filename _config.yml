@@ -11,7 +11,7 @@ keywords: cppfish 'Three Trees'
 
 # Build settings
 markdown: kramdown
-permalink: /:categories/:title/
+permalink: /:categories/:year/:month/:day/:title/
 highlighter: rouge
 sass:
   sass_dir: assets/_sass

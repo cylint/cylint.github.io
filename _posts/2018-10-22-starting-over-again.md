@@ -7,7 +7,7 @@ published: true
 description: For whatever reason I'm really not happy with the content I've written in the past so I'm going to start over again, from scratch.
 ---
 
-我从2014年开始学者写自己的博客，换了很多的主题，常常因为不合心意就不停的改删，却忘记了写博客的初衷。
+我从2014年开始学着写自己的博客，换了很多的主题，常常因为不合心意就不停的改删，却忘记了写博客的初衷。
 
 现在我又换回来了最早时候的样子，内容会逐渐的转过来。之前我是把logo改成了“杭”字，现在换成了企鹅。
 

@@ -4,7 +4,6 @@ title: 在校期间借阅的图书 I
 date: 2018-11-27 23:18:23
 author: cppfish
 categories: redo
-short_description: This is an overview post about testing frameworks in bash.
 description: For whatever reason I'm really not happy with the content I've written in the past so I'm going to start over again, from scratch.
 image_preview: /images/icon-linux@2X.png
 ---

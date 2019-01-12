@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 我想换工作，还是想换项目，或者想换岗位？
+title: 我是想换工作，还是想换项目，或者想换岗位？
 author: cppfish
 categories: redo
 description: For whatever reason I'm really not happy with the content I've written in the past so I'm going to start over again, from scratch.

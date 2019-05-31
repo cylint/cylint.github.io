@@ -1,9 +1,9 @@
-# Site settings
+﻿# Site settings
 title: Three Trees
 email: erichueng@gmail.com
 description: "欢迎阅读Three Trees的博客"
 baseurl: ""
-# url: "https://threetrees.net"
+url: "http://relzx.com"
 twitter_username: #sam_pedley
 github_username:  cppfish
 include: ['.htaccess']

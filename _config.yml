@@ -3,7 +3,7 @@ title: Three Trees
 email: erichueng@gmail.com
 description: "欢迎阅读Three Trees的博客"
 baseurl: ""
-url: "http://relzx.com"
+url: "http://www.relzx.com"
 twitter_username: #sam_pedley
 github_username:  cppfish
 include: ['.htaccess']

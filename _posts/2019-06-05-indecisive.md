@@ -9,7 +9,7 @@ image: /images/rong/sonw-walking.jpg
 
 <img src="/images/rong/sonw-walking.jpg">
 
-5月运气不太好，可能是生日在这个月，也可能是见到的小姐姐突然多了，精武唯勤，情欲伤身。
+5月运气不太好，可能是生日在这个月，也可能是见到的小姐姐突然多了。
 
 遇到好几件不如意的事情：
 

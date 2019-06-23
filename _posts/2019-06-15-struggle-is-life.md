@@ -30,7 +30,6 @@ image: /images/rong/sonw-walking.jpg
 
 把自己的书重新归类一下，每天多看书。
 
-小姐姐，小猫猫之类的少看了，精武唯勤，情欲伤身。
 
 
 

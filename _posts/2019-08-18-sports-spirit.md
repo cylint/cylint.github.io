@@ -2,7 +2,7 @@
 layout: post
 title: 也拟哭途穷，死灰吹不起
 author: cppfish
-categories: 一个月过去了，然而我并没有辞职。
+categories: #
 description: 
 image: /images/memory.jpg
 ---

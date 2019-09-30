@@ -2,8 +2,8 @@
 layout: post
 title: 我似乎忘记了自己的目标
 author: cppfish
-categories: 我真的是太懒了，而且对于工作，也花了太多不该花的时间。
-description: 
+categories: #
+description: 我真的是太懒了，而且对于工作，也花了太多不该花的时间。
 image: /images/memory.jpg
 ---
 

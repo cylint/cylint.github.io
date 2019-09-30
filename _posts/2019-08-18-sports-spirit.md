@@ -3,7 +3,7 @@ layout: post
 title: 也拟哭途穷，死灰吹不起
 author: cppfish
 categories: #
-description: 
+description: "自我来黄州，已过三寒食，年年欲惜春，春去不容惜。今年又苦雨，两月秋萧瑟。卧闻海棠花，泥污燕支雪。闇中偷负去，夜半真有力。何殊病少年，病起须已白。"
 image: /images/memory.jpg
 ---
 

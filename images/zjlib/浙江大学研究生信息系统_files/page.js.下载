@@ -1,0 +1,9 @@
+var Page = $.clazz({
+	initialize : function(InitParams) {
+		this.InitParams = InitParams;
+		this.bindEvents();
+	},
+	bindEvents:function() {
+		
+	}
+});

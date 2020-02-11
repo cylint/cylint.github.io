@@ -1,0 +1,454 @@
+var windowObj;          //打开窗口对象
+var timeout;
+
+$.ajaxSetup({             //***设置ajax同步执行 
+	  async: false 
+	  });
+
+$.extend({
+	  allSelect:function(){     //全选
+		  if($("#all_check").attr("checked")) $("input:checkbox[name='rs_chk'][disabled!='disabled']").attr("checked",true);
+		  else $("input:checkbox[name='rs_chk']").attr("checked",false);
+	  },
+	 chkSelect:function(){   //单个选择
+		 if($("input:checkbox[name='rs_chk']").length==$("input:checkbox[name='rs_chk']:checked").length) $("#all_check").attr("checked",true); 
+		 else $("#all_check").attr("checked",false);
+	  },
+	  pagingSubmit:function(page){     //分页点击事件 
+		  $("#page").val(page);
+		  $("#search").click();
+	  },
+	  checkChangePage:function(type){      //页面选择记录提交
+			var checkObj = $("input:checkbox[name='rs_chk']:checked");
+			if(checkObj.length==0){
+				alert("请选择记录!");
+				return false;
+			   }
+			else{
+				$("#dis_changPage").val(type);
+				$("#dis_changPage").click();
+			}
+		  },
+		  //added by wanglei on 1.23
+		  radioChangePage:function(type){      //页面选择记录提交
+				var radioObj = $("input:radio[name='rs_chk']:checked").val();
+				if(radioObj==null){
+					alert("请选择记录!");
+					return false;
+				   }
+				else{
+					$("#dis_changPage").val(type);
+					$("#dis_changPage").click();
+				}
+			  },
+	  changePage:function(type){            //页面直接提交
+				$("#dis_changPage").val(type);
+				$("#dis_changPage").click();
+		  },
+		  changeForm:function(type){            //页面直接提交
+				$("#operateType").val(type);
+				$("#operateType").click();
+		  },
+	  switchPage:function(path){            //页面跳转
+			window.location.href = Path.getProjectPath()+path;
+	  },  
+	  selectOnchange:function(type){            //页面直接提交
+			$("#select").click();
+	  },
+	  delRs:function(keyval,type){         //进行记录删除
+		     $("#dis_key").val(keyval);		
+			 $.changePage(type);
+			},
+	  modifyRs:function(keyval,type){         //进行记录修改
+		     $("#dis_key").val(keyval);		
+			 $.changePage(type);
+			},		
+	  isNull:function(keyArray,valArray){         //判断是否为空
+		  for(i=0; i<keyArray.length; i++){
+		        if($("#"+keyArray[i]).val() == "-1"||$("#"+keyArray[i]).val() == ""){
+		            alert(valArray[i]+"不能为空");
+		            $("#"+keyArray[i]).focus();
+	            	return false;
+		            }
+		        }
+		       return true;
+		    },
+	    setDisplay:function(operId){         //设置显示或者不显示
+	    	$("#"+operId).css("display",$("#"+operId).css('display')=="none"?"block":"none");
+	        },
+	    changeDisplay:function(hidenId,showId){      //设置两个内容，一个显示，一个不显示
+	    	 $("#"+hidenId).hide();
+	    	 $("#"+showId).show();
+		     },
+	    download:function(fileType){         //文件下载
+	    	window.location.href = "?pageAction=download&fileType="+fileType;
+			},
+		filePrint:function(path){           //文件打印
+			var print_URL="http:\/\/"+window.location.host;
+			print_URL+= path+".htm";
+			window.open(print_URL);
+			},
+		closeWindow:function(){             //关闭子窗口
+				var api = frameElement.api, W = api.opener,D = W.document;
+				W.windowObj.close();
+			},
+		closeWindowAndFresh:function(){     //关闭子窗口，并刷新父页面
+				var api = frameElement.api, W = api.opener,D = W.document;
+				W.$.changePage('search');
+				W.windowObj.close();
+			},
+		refreshCustomForm:function(){
+			$(".radio-stu").detach();
+			$(".selete-stu").detach();
+			$(".checkbox-stu").detach();
+			Custom.init();
+		}
+	});
+
+jQuery.fn.extend({
+	refreshChosen:function(){
+		if(!$(this).hasClass("chzn-select")){
+			return;
+		}
+		$(this).next('div.chzn-container').remove();
+		$(this).removeClass('chzn-done');
+		$(this).chosen();
+	}
+});
+
+
+function CKupdate(){     //用ajax的serialize()方法提交之前，处理ckeditor的值，不然后台取不到值
+    for (instance in CKEDITOR.instances)
+        CKEDITOR.instances[instance].updateElement();
+}
+
+//checkbox选择框
+var CheckBox = {
+		isCheck:function(){
+			var checkObj = $("input:checkbox[name='rs_chk']:checked");
+			if(checkObj.length==0){
+				alert("请选择记录!");
+				return false;
+			   }
+			else return true;
+		},
+		isChecked:function(){
+			var checkObj = $("input:checkbox[name='rs_chk']:checked");
+			if(checkObj.length==0){
+				alert("请选择记录!");
+				return false;
+			   }
+			else return true;
+		},
+		isCheckedByName:function(name){
+			var checkObj = $("input:checkbox[name='"+name+"']:checked");
+			if(checkObj.length==0){
+				alert("请选择记录!");
+				return false;
+			   }
+			else return true;
+		}
+	};
+
+//radio选择框
+var Radio = {
+		isCheck:function(){
+			var checkObj = $("input:radio[name='rs_chk']:checked");
+			if(checkObj.length==0){
+				alert("请选择记录!");
+				return false;
+			   }
+			else return true;
+		},
+		isCheckObj:function(checkedName){
+			var checkObj = $("input:radio[name='rs_chk']:checked");
+			if(checkObj.length==0){
+				alert("请选择"+checkedName+"!");
+				return false;
+			   }
+			else return true;
+		},
+		isChecked:function(){
+			var checkObj = $("input:radio[name='rs_chk']:checked");
+			if(checkObj.length==0){
+				alert("请选择记录!");
+				return false;
+			   }
+			else return true;
+		},
+		isCheckedByName:function(name,checkedName){
+			var checkObj = $("input:radio[name='"+name+"']:checked");
+			if(checkObj.length==0){
+				alert("请选择"+checkedName+"!");
+				return false;
+			   }
+			else return true;
+		},
+		isCheckedObj:function(checkedName){
+			var checkObj = $("input:radio[name='rs_chk']:checked");
+			if(checkObj.length==0){
+				alert("请选择"+checkedName+"!");
+				return false;
+			   }
+			else return true;
+		}
+	};
+
+//得到页面url路径
+var Path = {
+		getPath:function(){
+			var hostPath = window.location.host;
+			var proctolName = window.location.protocol;
+			var hostName = window.location.pathname;
+			var allPath = proctolName+"//"+hostPath+hostName;
+			var path = allPath.substring(0, allPath.lastIndexOf("/")+1);
+			return path;
+		},	
+		getProjectPath:function(){
+			var hostPath = window.location.host;
+			var proctolName = window.location.protocol;
+			var hostName = window.location.pathname;
+			var hostNameProjectPath = hostName.substring(0,hostName.indexOf("/",1)+1);
+			var projectPath = proctolName+"//"+hostPath+hostNameProjectPath;
+			return projectPath;
+		},
+		getURI:function(){
+			var url = window.location.href;
+			return url.split("?")[0];
+		}
+};
+
+//下拉框操作
+var Select = {
+		getHtml:function(objId){
+			var resultHtml = "";
+			$("#"+objId+" option").each(function(){
+				var opeionVal = $(this).val();
+				var opeionText = $(this).text();
+				resultHtml += "<option value='"+opeionVal+"'>"+opeionText+"</option>";
+			});
+			return resultHtml;
+		}		
+};
+
+//用ajax得到下拉框内容
+var AjaxFresh = {
+		getZyList:function(){
+			$.post("?pageAction=getZyList",{"parameterVal":$("#stu_college").val()},function(result){
+				var zyObj = $("#stu_zy");
+				zyObj.empty();
+				$(zyObj).append("<option value='-1' selected='true'>请选择</option>");
+				for(var i=0;i<result.length;i++){
+					$(zyObj).append("<option value='"+result[i].id+"'>"+result[i].name+"</option>");
+				}
+			},"json");
+		},
+		getLhList:function(){
+			$.post("?pageAction=getLhList",{"xqId":$("#xqId").val()},function(result){
+				var lhObj = $("#lhId");
+				lhObj.empty();
+				$(lhObj).append("<option value='-1' selected='true'>请选择</option>");
+				for(var i=0;i<result.length;i++){
+					$(lhObj).append("<option value='"+result[i].id+"'>"+result[i].name+"</option>");
+				}
+			},"json");
+		},
+		getListByParameter:function(actionName,fromId,toId){
+			$.post("?pageAction="+actionName,{"parameterVal":$("#"+fromId).val()},function(result){
+				var tempObj = $("#"+toId);
+				tempObj.empty();
+				$(tempObj).append("<option value='-1' selected='true'>请选择</option>");
+				for(var i=0;i<result.length;i++){
+					$(tempObj).append("<option value='"+result[i].id+"'>"+result[i].name+"</option>");
+				}
+			},"json");
+		}
+};
+
+//得到前一页面的radio或者input的数组
+var PreSearchList = {
+		getSelectRadioItem : function(radioName){
+			var selectItem = W.$("input:radio[name='"+radioName+"']:checked");
+			return selectItem;
+		},
+		getSelectRadioValue : function(radioName){
+			var selectValue = W.$("input:radio[name='"+radioName+"']:checked").val();
+			return selectValue;
+		},
+		getSelectCheckItem : function(checkName){
+			var arrChk=$("input[name='"+checkName+"'][disabled!='disabled']:checked");
+			return arrChk;
+		},
+		getSelectCheckValue : function(checkName){
+			var arrChk=W.$("input[name='"+checkName+"'][disabled!='disabled']:checked");
+			var values = new Array();
+			var i = 0;
+			$(arrChk).each(function(){
+			    values[i] = $(this).val();
+			    i++;
+			});
+			return values;
+		}
+	};
+
+//字符串操作
+var Character = {      
+	toFloat:function(char,n){         //转化为float格式
+		return char.toFixed(n);
+	}	
+};
+
+var InitParams = {
+		url : "",
+		initVar : new Object()
+	};
+
+var SearchList = {
+		getSelectRadioItem : function(radioName){
+			var selectItem = $("input:radio[name='"+radioName+"']:checked");
+			return selectItem;
+		},
+		getSelectRadioValue : function(radioName){
+			var selectValue = $("input:radio[name='"+radioName+"']:checked").val();
+			return selectValue;
+		},
+		getSelectCheckItem : function(checkName){
+			var arrChk=$("input[name='"+checkName+"'][disabled!='disabled']:checked");
+			return arrChk;
+		},
+		getSelectCheckValue : function(checkName){
+			var arrChk=$("input[name='"+checkName+"'][disabled!='disabled']:checked");
+			var values = new Array();
+			var i = 0;
+			$(arrChk).each(function(){
+			    values[i] = $(this).val();
+			    i++;
+			});
+			return values;
+		},
+		getSelectedStr : function(checkName){
+			var arrChk=$("input[name='"+checkName+"'][disabled!='disabled']:checked");
+			var values = "";
+			var i = 0;
+			$(arrChk).each(function(){
+				values += (i==0?$(this).val():","+$(this).val());
+			    i++;
+			});
+			return values;
+		},
+		checkAllEvent : function(checkAllName, checkName){
+			$("input[name='"+checkAllName+"']").click(function(){
+				if($(this).attr("checked"))
+		        	$("input[name='"+checkName+"'][disabled!='disabled']").attr("checked",true);
+				else
+					$("input[name='"+checkName+"'][disabled!='disabled']").removeAttr("checked");
+		    });
+		}
+	};
+
+
+var Post = {
+		action : function(action, data, callback) {
+			$.post("?pageAction=" + action, data, callback, "json");
+		},
+		form : function(action, formId, callback) {
+			$.post("?pageAction=" + action, $("#" + formId).serialize(), callback, "json");
+		},
+		all : function(action, formId, params, callback) {
+			var message = $("#" + formId).serialize();
+			for ( var key in params) {
+				message += "&" + key + "=" + params[key];
+			}
+			$.post("?pageAction=" + action, message, callback, "json");
+		}
+	};
+
+	var PageAction = {
+		redirect : function(action) {
+			window.location.href = action;
+		},
+		reload : function() {
+			window.location.reload();
+		},
+		open : function(action) {
+			window.open(action);
+		}
+	};
+	
+	
+	
+	var CheckData = {        //进行数据检测
+		mail:function(data){
+			var bool = true;
+			var tempData = data.toLowerCase();
+			if(tempData.indexOf("qq.com")!=-1){
+				alert("不能使用QQ邮箱，否则邮件可能会被拒收!");
+				bool = false;
+			}
+			return bool;
+		}	
+	};
+	
+	
+	
+	//得到下拉框的html
+	var getSelectHtml = {
+			getPylx:function(pylxId,name){           //得到评阅类型
+		        var pylxHtml = "";
+		    	$.post("?pageAction=getPylxList",{},function(resultArray){
+		    		pylxHtml = "<select name='"+name+"' id='"+name+"' class='selectbox w-200'>";
+					   for(var i=0;i<resultArray.length;i++){
+						   var selectdHtml = "";
+						   if(resultArray[i].code==pylxId) selectdHtml = " selected ";
+						   pylxHtml += "<OPTION value='"+resultArray[i].code+"' "+selectdHtml+" >"+resultArray[i].name+"</OPTION>";
+					   }
+					   pylxHtml += "</select>";
+		    	});
+		    	return pylxHtml;
+			},
+			getZc:function(zcId,name){           //得到评阅类型
+		        var zcHtml = "";
+		    	$.post("?pageAction=getZcList",{},function(resultArray){
+		    		zcHtml = "<select name='"+name+"' id='"+name+"' class='selectbox w-200'>";
+					   for(var i=0;i<resultArray.length;i++){
+						   var selectdHtml = "";
+						   if(resultArray[i].code==zcId) selectdHtml = " selected ";
+						   zcHtml += "<OPTION value='"+resultArray[i].code+"' "+selectdHtml+" >"+resultArray[i].name+"</OPTION>";
+					   }
+					   zcHtml += "</select>";
+		    	});
+		    	return zcHtml;
+			}
+	};
+	
+	(function($){
+		$.fn.disableAll = function(disabled){
+			if(disabled)
+				return $(this).find("*").each(function() {$(this).attr("disabled", "disabled");});
+			else
+				return $(this).find("*").each(function() {$(this).removeAttr("disabled");});
+			};
+	})(jQuery);
+	(function($){
+		$.fn.disable = function(disabled){
+			if(disabled)
+				return $(this).attr("disabled", "disabled");
+			else
+				return $(this).removeAttr("disabled");
+			};
+	})(jQuery);
+	
+	
+function submitForm(formName){
+	$("#"+formName).submit();
+}
+
+
+function changeForm(type){            //页面直接提交
+	$("#operateType").val(type);
+	$("#operateType").click();
+}
+
+
+	
+	

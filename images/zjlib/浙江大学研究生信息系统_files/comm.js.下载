@@ -1,0 +1,143 @@
+(function($){$.fn.disable = function(){return $(this).find("*").each(function() {$(this).attr("disabled", "disabled");});}})(jQuery);
+(function($){$.fn.enable = function(){return $(this).find("*").each(function() {$(this).removeAttr("disabled");});}})(jQuery);
+
+$(document).ready(function(){
+	
+	$(".tabDiv").mouseenter(function() {
+		$(".tabUl").addClass("hide");
+		$("."+this.id).removeClass("hide");
+	});
+	$('.setting_module').mouseenter(function() {
+		// hide
+		$(".tabUl").addClass("hide");
+		// display current sub-menu
+		var current_id = $('.grs-header .current').attr('id');
+		//alert(current_id);
+		$("."+current_id).removeClass("hide");
+	});
+	
+	var dateConfig = {
+			dateFormat: 'yy-mm-dd',       //日期格式  
+			yearRange: '-18:+10' ,         //前20后10年，
+	};
+	$(".RQKJ").datepick(dateConfig);
+	
+	
+	/////////*表头复选class=head_checkall，表内复选name=check_list    如果有调用异常，检查上述两项*/
+	 /*全选功能*/
+		$(".head_checkall").click(function(){
+			if($(this).attr("checked"))
+			    $("input:checkbox[name='check_list'][disabled!='disabled']").attr("checked",true);
+			else
+				$("input:checkbox[name='check_list'][disabled!='disabled']").removeAttr("checked");
+		});	
+		
+		/*自动取消和添加全选*/
+		$("input.[name=check_list]").click(function(){
+			var checked = new Array();
+	    	var arrChk=$("input[name='check_list']:checked");
+			var checkNo = 0;
+			var chkNo=0;
+	    	$(arrChk).each(function(){
+	    	       checked[checkNo] = this.value;
+	    	       checkNo++;
+	    	});
+			arrChk=$("input[name='check_list']");
+			$(arrChk).each(function(){chkNo++;});
+			if(chkNo - checkNo)
+				$(".head_checkall").removeAttr("checked");	
+			else
+				$(".head_checkall").attr("checked",true);
+		});
+	
+
+	/**联动：学院--专业&系*/
+	$("#yx").bind("change", function(){
+		$.post("?pageAction=getZy", {"yx":$("#yx").val()}, function(zyConfig){
+			$("#zy option[value!='-1']").remove();
+			for(var i=0; i < zyConfig.length ; i++){
+				$("#zy").append("<option value='" + zyConfig[i].zyID + "'>"+"("+zyConfig[i].ejxkDm+")" +zyConfig[i].ejxkMc+ "</option>");
+			}
+		},"json");
+	});
+	
+	$("#mssyx").bind("change", function(){
+		$.post("?pageAction=getZyByMssYx", {"yx":$("#mssyx").val()}, function(zyConfig){
+			$("#zy option[value!='-1']").remove();
+			for(var i=0; i < zyConfig.length ; i++){
+				$("#zy").append("<option value='" + zyConfig[i].zyID + "'>"+"("+zyConfig[i].ejxkDm+")" +zyConfig[i].ejxkMc2+ "</option>");
+			}
+		},"json");
+	});
+	
+	$("#mod_mssyx").bind("change", function(){
+		$.post("?pageAction=getZyByMssYx", {"yx":$("#mod_mssyx").val()}, function(zyConfig){
+			$("#mod_zy option[value!='-1']").remove();
+			for(var i=0; i < zyConfig.length ; i++){
+				$("#mod_zy").append("<option value='" + zyConfig[i].zyID + "'>"+"("+zyConfig[i].ejxkDm+")" +zyConfig[i].ejxkMc2+ "</option>");
+			}
+		},"json");
+	});
+	
+	/**报考专业的联动*/
+	$("#bkyx").bind("change", function(){
+		$.post("?pageAction=getZyByYxDm", {"yx":$("#bkyx").val()}, function(zyConfig){
+			$("#bkzy option[value!='-1']").remove();
+			for(var i=0; i < zyConfig.length ; i++){
+				$("#bkzy").append("<option value='" + zyConfig[i].ejxkDm + "'>"+"("+zyConfig[i].ejxkDm+")" +zyConfig[i].ejxkMc+ "</option>");
+			}
+		},"json");
+	});
+	
+	/**排序查询结果的显示特效 表头点击选择排序*/
+    arrowUp = document.createElement("SPAN");
+    arrowUp.innerHTML   = "&#9650;";
+    arrowUp.style.cssText   = "PADDING-RIGHT: 0px; MARGIN-TOP: -3px; PADDING-LEFT: 0px; FONT-SIZE: 10px; MARGIN-BOTTOM: 2px; PADDING-BOTTOM: 2px; OVERFLOW: hidden; WIDTH: 10px; COLOR: blue; PADDING-TOP: 0px; HEIGHT: 11px";
+
+    arrowDown = document.createElement("SPAN");
+    arrowDown.innerHTML = "&#9660;";
+    arrowDown.style.cssText = "PADDING-RIGHT: 0px; MARGIN-TOP: -3px; PADDING-LEFT: 0px; FONT-SIZE: 10px; MARGIN-BOTTOM: 2px; PADDING-BOTTOM: 2px; OVERFLOW: hidden; WIDTH: 10px; COLOR: blue; PADDING-TOP: 0px; HEIGHT: 11px";
+
+	 method0 = $("#orderMethod").val();
+	 item0 = $("#orderItem").val(); 
+	 itemid = "#th_"+item0;
+	if(method0 == " DESC"){
+		$(itemid).append(arrowDown);
+	}else if(method0 == " ASC" ){
+		$(itemid).append(arrowUp);
+	}
+	
+	/**页面跳转  下拉菜单选择页面*/
+	$(".page_select").change(function(){
+		newhref=$(this).val();
+		//alert(location.origin+location.pathname+newhref);
+		window.location.href=/*location.protocol+location.host+*/location.pathname+newhref;
+	});
+	
+	$(".tab_click").click(function(){
+		$.post("?pageAction=toClearOrder", {}, function(){},"json");
+	});
+});
+
+/**点击排序的操作，对于不同的参数类型进行不同的排序方式*/
+function tableSort(index,item){
+	var methodClass="";
+	if(index == "mss"){
+		methodClass = "?pageAction=setMssOrder";
+	}else if(index == "cj"){
+		methodClass = "?pageAction=setCjOrder";
+	}else if(index == "sxk"){
+		methodClass = "?pageAction=setSxkOrder";
+	}else if(index == "xwtj"){
+		methodClass = "?pageAction=setXwtjOrder";
+	}else if(index == "zsml"){
+		methodClass = "?pageAction=setZsmlOrder";
+	}
+	$.post(methodClass, {"item":item}, function(re){
+		//window.location.reload(/*location.href*/);
+		$("#search").click();
+	},"json");
+
+}
+
+

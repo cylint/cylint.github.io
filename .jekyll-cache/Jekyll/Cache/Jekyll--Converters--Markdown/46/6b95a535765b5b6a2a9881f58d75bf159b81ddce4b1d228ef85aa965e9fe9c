@@ -1,0 +1,19 @@
+I"�<p>我发现了一个很好的三维显示解决方法。</p>
+
+<p><img src="http://www.mago3d.com/images/en/homepage/arc.png" /></p>
+
+<p>是 Java 写的。</p>
+
+<p>一个进度管理的软件（在我笔电脑上），也是 Java 写的。</p>
+
+<p>另外，我想重新写一个进度管理的模块，专门针对工程的，总进度控制，关键节点，进度对比，进度工程量、工程造价方面结合的管理方案。再以软件形式实现。</p>
+
+<ul>
+  <li>https://www.ogre3d.org/</li>
+  <li>http://www.gaia3d.com/en/</li>
+  <li>https://github.com/Gaia3D/mago3d/tree/develop</li>
+  <li>http://www.libreplan.org/</li>
+  <li>https://www.ganttproject.biz/</li>
+</ul>
+
+:ET

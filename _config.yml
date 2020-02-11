@@ -1,13 +1,13 @@
 ﻿# Site settings
-title: Three Trees
+title: Luke
 email: erichueng@gmail.com
-description: "欢迎阅读Three Trees的博客"
+description: "Luke's Blog"
 baseurl: ""
 # url: "http://www.relzx.com"
 twitter_username: #sam_pedley
 github_username:  cppfish
 include: ['.htaccess']
-keywords: cppfish 'Three Trees'
+keywords: cppfish 'Three Trees' Luke
 
 # Build settings
 markdown: kramdown
@@ -18,7 +18,7 @@ sass:
   style: compressed
 
 #Site Variables
-image: /assets/images/banner3.jpg
+image: /assets/images/AddProfile_Banner.png
 # Nav Bar Data
 nav:
 - name: Home

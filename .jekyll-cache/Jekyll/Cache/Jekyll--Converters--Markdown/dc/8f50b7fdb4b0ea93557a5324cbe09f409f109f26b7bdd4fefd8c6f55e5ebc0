@@ -1,18 +1,7 @@
----
-layout: post
-title: 在校期间借阅的图书 II
-date: 2018-11-28 23:18:23
-author: cppfish
-categories: redo
-description: For whatever reason I'm really not happy with the content I've written in the past so I'm going to start over again, from scratch.
----
-
-2011年-2013年主要在A、B区。
-![重庆大学B区图书馆](/images/cqu/cqu-lib-b-290212-1718.jpg)
+I"'[<p>2011年-2013年主要在A、B区。
+<img src="/images/cqu/cqu-lib-b-290212-1718.jpg" alt="重庆大学B区图书馆" /></p>
 
 <!-- external_url: # -->
-
-
 <!-- 
 |                       题名                       |       索书号       |         馆藏地        |             借阅时间           |
 |:------------------------------------------------:|:------------------:|:---------------------:|:------------------------------:|
@@ -174,3 +163,4 @@ description: For whatever reason I'm really not happy with the content I've writ
 |                 高温超导直线电机                 |    TM35   2011 4   |        自科书库       |            2013/6/25           |
 |                 盾构隧道管片设计                 |    U45   2012 1    |        自科书库       |            2013/6/26           |
 -->
+:ET

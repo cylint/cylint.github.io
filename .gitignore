@@ -6,7 +6,7 @@ site/public/config.codekit
 _site/
 site/
 .jekyll-metadata
-Gemfile.lock
+# Gemfile.lock
 .npm-debug.log
 update_rubygems.bat
 update-build.bat

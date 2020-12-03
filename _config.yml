@@ -18,7 +18,7 @@ sass:
   style: compressed
 
 #Site Variables
-image: /assets/images/AddProfile_Banner.jpg
+image: /assets/images/wl.jpg
 # Nav Bar Data
 nav:
 - name: Home

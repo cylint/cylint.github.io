@@ -1,17 +1,17 @@
 ﻿# Site settings
-title: Luke
+title: ChangFeng Wandering Diary
 email: erichueng@gmail.com
-description: "Luke's Blog"
-baseurl: ""
+description: "Eirck's Blog"
+# baseurl: ""
 # url: "http://www.relzx.com"
-twitter_username: #sam_pedley
+twitter_username: #
 github_username:  cppfish
 include: ['.htaccess']
-keywords: cppfish 'Three Trees' Luke
+keywords: Erick
 
 # Build settings
 markdown: kramdown
-permalink: /:categories/:year/:month/:day/:title/
+permalink: /:year/:month/:day/:title/
 highlighter: rouge
 sass:
   sass_dir: assets/_sass

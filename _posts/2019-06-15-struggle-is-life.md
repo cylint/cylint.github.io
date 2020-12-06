@@ -3,8 +3,8 @@ layout: post
 title: 奋斗就是生活，人生惟有前进
 author: cppfish
 categories: #
+tags: [BIM]
 description: Struggle is life, life is the only way forward.
-image: /images/rong/sonw-walking.jpg
 ---
 
 之前，我总是很自负，认为自己很努力，其实不然。

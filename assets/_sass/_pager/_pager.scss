@@ -1,0 +1,58 @@
+pager
+{
+//  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 6px;
+  background-color: $color-white;
+  @include primaryContainerSize;
+}
+
+.pager {
+  padding: 0 5px 15px 10px;
+  margin: 5px 0;
+//  list-style: none;
+  text-align: center;
+  li {
+    display: inline;
+    > a,
+    > span {
+      display: inline-block;
+      padding: 5px 14px;
+      background-color: $color-white;
+      border: 1px solid $color-fountainGreen;
+      border-radius: 10px;
+    }
+
+    > a:hover,
+    > a:focus {
+      text-decoration: none;
+      background-color: $behance;
+    }
+  }
+
+  .next {
+    > a,
+    > span {
+      float: right;
+    }
+  }
+
+  .previous {
+    > a,
+    > span {
+      float: left;
+    }
+  }
+
+  .disabled {
+    > a,
+    > a:hover,
+    > a:focus,
+    > span {
+      color: $color-fountainGreen;
+      background-color: $color-white;
+//      cursor: not-allowed;
+    }
+  }
+}

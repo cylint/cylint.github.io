@@ -7,18 +7,18 @@ table {
 }
   
 td,th {
-    border-left: 1px solid #cbcbcb;
+    border-left: 1px solid #f2f2f2;
     border-width: 0 0 0 2px;
-    font-size: inherit;
+//    font-size: inherit;
+    font-size: 0.8rem;
     margin: 0;
     overflow: visible;
     padding: .5em 1em;
-    border-bottom: 2px solid #f2f2f2;
+    border-bottom: 2px solid #cbcbcb;
 }
  
 thead {
     background-color: $backgroundColor;
-//    color: #000;
 //    text-align: left;
 //    vertical-align: bottom;
 }
